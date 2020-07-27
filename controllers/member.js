@@ -2,7 +2,7 @@
 const uuid = require('uuid');
 
 const logger = require('../utils/logger');
-const memberStore = require('../models/member-store');
+const memberStore = require('../controllers/trainer.js');
 
 const member = {
   index(request, response) {
@@ -21,7 +21,6 @@ const member = {
     memberStore.removeStat(memberId, statId);
     response.redirect('/member/' + memberId);
   },
-  
     addStat(request, response) {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
