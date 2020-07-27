@@ -1,53 +1,41 @@
 'use strict';
+const uuid = require('uuid');
 
-const _ = require('lodash');
-const JsonStore = require('./json-store');
+const logger = require('../utils/logger');
+const memberStore = require('../models/member-store');
 
-const memberStore = {
-
-  store: new JsonStore('./models/member-store.json', { memberCollection: [] }),
-  collection: 'memberCollection',
-
-  getAllMembers() {
-    return this.store.findAll(this.collection);
+const member = {
+  index(request, response) {
+    const memberId = request.params.id;
+    logger.debug('Member id = ', memberId);
+    const viewData = {
+      name: 'Member',
+      member: memberStore.getMember(memberId),
+    };
+    response.render('member', viewData);
   },
-
-  getMember(id) {
-    return this.store.findOneBy(this.collection, { id: id });
+    deleteStat(request, response) {
+    const memberId = request.params.id;
+    const statId = request.params.statsId;
+    logger.debug(`Deleting Stat ${statId} from Member ${memberId}`);
+    memberStore.removeStat(memberId, statId);
+    response.redirect('/member/' + memberId);
   },
-
-  addMember(member) {
-    this.store.add(this.collection, member);
-    this.store.save();
-  },
-
-  removeMember(id) {
-    const member = this.getMember(id);
-    this.store.remove(this.collection, member);
-    this.store.save();
-  },
-
-  removeAllMembers() {
-    this.store.removeAll(this.collection);
-    this.store.save();
-  },
-
-  addStat(id, stat) {
-    const member = this.getMember(id);
-    member.stats.push(stat);
-    this.store.save();
-  },
-
-  removeStat(id, statId) {
-    const member = this.getMember(id);
-    const stats = member.stats;
-    _.remove(stats, { id: statId});
-    this.store.save();
-  },
-  
-    getUserMembers(userid) {
-    return this.store.findBy(this.collection, { userid: userid });
+    addStat(request, response) {
+    const memberId = request.params.id;
+    const member = memberStore.getMember(memberId);
+    const newStat = {
+      id: uuid.v1(),
+      weight: request.body.weight,
+      chest: request.body.chest,
+      thigh: request.body.thigh,
+      upperArm: request.body.upperArm,
+      waist: request.body.waist,
+      hips: request.body.hips,
+    };
+    memberStore.addStat(memberId, newStat);
+    response.redirect('/member/' + memberId);
   },
 };
 
-module.exports = memberStore;
+module.exports = member;

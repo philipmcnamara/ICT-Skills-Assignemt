@@ -45,6 +45,12 @@
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "name": "Marge Simpson",
       "stats": []
+    },
+    {
+      "id": "db020350-cff9-11ea-8666-0d8a56058d82",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Bart Simpson",
+      "stats": []
     }
   ]
 }
