@@ -3,15 +3,15 @@
 const accounts = require ('./accounts.js');
 const uuid = require('uuid');
 const logger = require("../utils/logger");
-const memberStore = require('../models/trainer-store');
+const memberStore = require('../models/member-store');
 
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
-    const loggedInMember = accounts.getCurrentMember(request);
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       name: 'Member Dashboard',
-      member: memberStore.getTrainerMembers(loggedInMember.id),
+      member: memberStore.getUserMembers(loggedInUser.id),
     };
     logger.info('about to render', memberStore.getAllMembers());
     response.render('dashboard', viewData);
@@ -24,10 +24,10 @@ const dashboard = {
     response.redirect('/dashboard');
   },
     addMember(request, response) {
-    const loggedInMember = accounts.getCurrentMember(request);
+    const loggedInUser = accounts.getCurrentUser(request);
     const newMember = {
       id: uuid.v1(),
-      memberid: loggedInMember.id,
+      userid: loggedInUser.id,
       name: request.body.name,
       stats: [],
     };

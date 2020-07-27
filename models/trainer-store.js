@@ -45,8 +45,8 @@ const memberStore = {
     this.store.save();
   },
   
-    getTrainerMembers(memberid) {
-    return this.store.findBy(this.collection, { memberid: memberid });
+    getUserzMembers(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
   },
 };
 

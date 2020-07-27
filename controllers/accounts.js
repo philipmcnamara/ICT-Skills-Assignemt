@@ -1,6 +1,6 @@
 'use strict';
 
-const memberstore = require('../models/member-store');
+const userstore = require('../models/member-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
 
@@ -35,25 +35,25 @@ const accounts = {
   register(request, response) {
     const user = request.body;
     user.id = uuid.v1();
-    memberstore.addUser(user);
+    userstore.addUser(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
   },
 
   authenticate(request, response) {
-    const member = memberstore.getMemberByEmail(request.body.email);
-    if (member) {
-      response.cookie('member', member.email);
-      logger.info(`logging in ${member.email}`);
+    const user = userstore.getUserByEmail(request.body.email);
+    if (user) {
+      response.cookie('member', user.email);
+      logger.info(`logging in ${user.email}`);
       response.redirect('/dashboard');
     } else {
       response.redirect('/login');
     }
   },
 
-  getCurrentMember(request) {
-    const memberEmail = request.cookies.member;
-    return memberstore.getMemerByEmail(memberEmail);
+  getCurrentUser(request) {
+    const userEmail = request.cookies.member;
+    return userstore.getUserByEmail(userEmail);
   },
 };
 
