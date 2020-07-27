@@ -21,6 +21,7 @@ const member = {
     memberStore.removeStat(memberId, statId);
     response.redirect('/member/' + memberId);
   },
+  
     addStat(request, response) {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
