@@ -1,0 +1,19 @@
+{
+  "memberCollection": [
+    {
+      "id": "488b4af0-cb4d-11ea-9ba1-dd1218202018",
+      "name": "Homer Simpson",
+      "stats": [
+        {
+          "id": "4e7da980-cb4d-11ea-9ba1-dd1218202018",
+          "weight": "1",
+          "chest": "2",
+          "thigh": "3",
+          "upperArm": "4",
+          "waist": "5",
+          "hips": "6"
+        }
+      ]
+    }
+  ]
+}

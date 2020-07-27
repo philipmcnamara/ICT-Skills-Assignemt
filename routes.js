@@ -7,7 +7,6 @@ const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
 const member = require('./controllers/member.js');
 const accounts = require('./controllers/accounts.js');
-const trainer = require('./controllers/member.js');
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);
