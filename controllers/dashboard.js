@@ -8,10 +8,10 @@ const memberStore = require('../models/trainer-store');
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
-    const loggedInUser = accounts.getCurrentUser(request);
+    const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
       name: 'Member Dashboard',
-      member: memberStore.getUserMembers(loggedInUser.id),
+      member: memberStore.getTrainerMembers(loggedInMember.id),
     };
     logger.info('about to render', memberStore.getAllMembers());
     response.render('dashboard', viewData);
@@ -24,10 +24,10 @@ const dashboard = {
     response.redirect('/dashboard');
   },
     addMember(request, response) {
-    const loggedInUser = accounts.getCurrentUser(request);
+    const loggedInMember = accounts.getCurrentMember(request);
     const newMember = {
       id: uuid.v1(),
-      userid: loggedInUser.id,
+      memberid: loggedInMember.id,
       name: request.body.name,
       stats: [],
     };

@@ -17,7 +17,7 @@
     },
     {
       "id": "3e65d7c0-cb52-11ea-b1dc-0bbbe8c890ec",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Homer Simpson",
       "stats": [
         {
@@ -28,28 +28,13 @@
           "upperArm": "4",
           "waist": "5",
           "hips": "6"
-        },
-        {
-          "id": "7334c400-cff0-11ea-a822-93bc9ee7efdd",
-          "weight": "2",
-          "chest": "3",
-          "thigh": "4",
-          "upperArm": "5",
-          "waist": "6",
-          "hips": "7"
         }
       ]
     },
     {
       "id": "4bc9bad0-cb52-11ea-b1dc-0bbbe8c890ec",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "memberid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "name": "Marge Simpson",
-      "stats": []
-    },
-    {
-      "id": "db020350-cff9-11ea-8666-0d8a56058d82",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Bart Simpson",
       "stats": []
     }
   ]
