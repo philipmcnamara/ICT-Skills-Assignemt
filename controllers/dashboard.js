@@ -3,6 +3,7 @@
 const uuid = require('uuid');
 const logger = require("../utils/logger");
 const memberStore = require('../models/trainer-store');
+const accounts = require ('./accounts.js');
 
 const dashboard = {
   index(request, response) {
@@ -20,12 +21,16 @@ const dashboard = {
     memberStore.removeMember(memberId);
     response.redirect('/dashboard');
   },
+
     addMember(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newMember = {
       id: uuid.v1(),
+      userid: loggedInUser.id,
       name: request.body.name,
       stats: [],
     };
+    logger.debug('Creating a new Member', newMember);
     memberStore.addMember(newMember);
     response.redirect('/dashboard');
   },
