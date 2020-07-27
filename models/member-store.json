@@ -28,6 +28,15 @@
           "upperArm": "4",
           "waist": "5",
           "hips": "6"
+        },
+        {
+          "id": "7334c400-cff0-11ea-a822-93bc9ee7efdd",
+          "weight": "2",
+          "chest": "3",
+          "thigh": "4",
+          "upperArm": "5",
+          "waist": "6",
+          "hips": "7"
         }
       ]
     },
