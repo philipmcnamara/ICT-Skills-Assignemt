@@ -6,11 +6,12 @@ const trainerStore = require('../models/trainer-store');
 const accounts = require ('./accounts.js');
 
 const dashboard = {
-  index(request, response) {
+    index(request, response) {
     logger.info('dashboard rendering');
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       name: 'Member Dashboard',
-      member: trainerStore.getAllMembers(),
+      member: trainerStore.getUserMembers(loggedInUser.id),
     };
     logger.info('about to render', trainerStore.getAllMembers());
     response.render('dashboard', viewData);
