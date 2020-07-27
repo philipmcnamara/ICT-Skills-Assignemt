@@ -14,6 +14,21 @@
           "hips": "6"
         }
       ]
+    },
+    {
+      "id": "2b01c100-d014-11ea-bf27-6308e837de0f",
+      "name": "Marge Simpson",
+      "stats": [
+        {
+          "id": "33f37ce0-d014-11ea-bf27-6308e837de0f",
+          "weight": "5",
+          "chest": "6",
+          "thigh": "7",
+          "upperArm": "8",
+          "waist": "9",
+          "hips": "10"
+        }
+      ]
     }
   ]
 }

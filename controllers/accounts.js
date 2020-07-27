@@ -1,6 +1,6 @@
 'use strict';
 
-const userstore = require('../models/user-store');
+const userstore = require('../models/member-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
 
