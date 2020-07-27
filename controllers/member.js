@@ -1,34 +1,29 @@
 'use strict';
 const uuid = require('uuid');
-const accounts = require ('./accounts.js');
 
 const logger = require('../utils/logger');
-const memberStore = require('../models/trainer-store');
+const trainerStore = require('../models/trainer-store');
 
 const member = {
-
-    index(request, response) {
-    logger.info('dashboard rendering');
-    const loggedInUser = accounts.getCurrentUser(request);
+  index(request, response) {
+    const memberId = request.params.id;
+    logger.debug('Member id = ', memberId);
     const viewData = {
-      name: 'Dashboard',
-      member: memberStore.getUserMember(loggedInUser.id),
+      name: 'Member',
+      member: trainerStore.getMember(memberId),
     };
-    logger.info('about to render', memberStore.getAllMembers());
-    response.render('dashboard', viewData);
-    },
-  
+    response.render('member', viewData);
+  },
     deleteStat(request, response) {
     const memberId = request.params.id;
     const statId = request.params.statsId;
     logger.debug(`Deleting Stat ${statId} from Member ${memberId}`);
-    memberStore.removeStat(memberId, statId);
+    trainerStore.removeStat(memberId, statId);
     response.redirect('/member/' + memberId);
   },
-  
     addStat(request, response) {
     const memberId = request.params.id;
-    const member = memberStore.getMember(memberId);
+    const member = trainerStore.getMember(memberId);
     const newStat = {
       id: uuid.v1(),
       weight: request.body.weight,
@@ -38,7 +33,7 @@ const member = {
       waist: request.body.waist,
       hips: request.body.hips,
     };
-    memberStore.addStat(memberId, newStat);
+    trainerStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
   },
 };

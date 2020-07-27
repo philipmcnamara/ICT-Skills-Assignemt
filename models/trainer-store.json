@@ -1,28 +1,12 @@
 {
   "memberCollection": [
     {
-      "id": "de375e90-d016-11ea-8416-8f57bb9dd603",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Homer Simpson",
-      "stats": [
-        {
-          "id": "e32cbf80-d016-11ea-8416-8f57bb9dd603",
-          "weight": "1",
-          "chest": "2",
-          "thigh": "3",
-          "upperArm": "4",
-          "waist": "5",
-          "hips": "6"
-        }
-      ]
-    },
-    {
-      "id": "fbef8de0-d016-11ea-8416-8f57bb9dd603",
+      "id": "5a5b5930-d018-11ea-b5fc-47359b612441",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "name": "Marge Simpson",
       "stats": [
         {
-          "id": "0257b8b0-d017-11ea-8416-8f57bb9dd603",
+          "id": "bae4d460-d019-11ea-aab0-e1e160b0695b",
           "weight": "5",
           "chest": "6",
           "thigh": "7",
@@ -31,6 +15,12 @@
           "hips": "10"
         }
       ]
+    },
+    {
+      "id": "c5c65250-d019-11ea-aab0-e1e160b0695b",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Homer Simpson",
+      "stats": []
     }
   ]
 }

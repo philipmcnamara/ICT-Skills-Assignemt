@@ -2,7 +2,7 @@
 
 const uuid = require('uuid');
 const logger = require("../utils/logger");
-const memberStore = require('../models/trainer-store');
+const trainerStore = require('../models/trainer-store');
 const accounts = require ('./accounts.js');
 
 const dashboard = {
@@ -10,16 +10,16 @@ const dashboard = {
     logger.info('dashboard rendering');
     const viewData = {
       name: 'Member Dashboard',
-      member: memberStore.getAllMembers(),
+      member: trainerStore.getAllMembers(),
     };
-    logger.info('about to render', memberStore.getAllMembers());
+    logger.info('about to render', trainerStore.getAllMembers());
     response.render('dashboard', viewData);
   },
   
     deleteMember(request, response) {
     const memberId = request.params.id;
     logger.debug(`Deleting Member( ${memberId}`);
-    memberStore.removeMember(memberId);
+    trainerStore.removeMember(memberId);
     response.redirect('/dashboard');
   },
 
@@ -32,7 +32,7 @@ const dashboard = {
       stats: [],
     };
     logger.debug('Creating a new Member', newMember);
-    memberStore.addMember(newMember);
+    trainerStore.addMember(newMember);
     response.redirect('/dashboard');
   },
 };

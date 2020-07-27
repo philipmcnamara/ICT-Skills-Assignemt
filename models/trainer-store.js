@@ -3,7 +3,7 @@
 const _ = require('lodash');
 const JsonStore = require('./json-store');
 
-const memberStore = {
+const trainerStore = {
 
   store: new JsonStore('./models/trainer-store.json', { memberCollection: [] }),
   collection: 'memberCollection',
@@ -50,4 +50,4 @@ const memberStore = {
   },
 };
 
-module.exports = memberStore;
+module.exports = trainerStore;
