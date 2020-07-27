@@ -2,7 +2,7 @@
 const uuid = require('uuid');
 
 const logger = require('../utils/logger');
-const memberStore = require('../controllers/trainer.js');
+const memberStore = require('../models/member-store');
 
 const member = {
   index(request, response) {

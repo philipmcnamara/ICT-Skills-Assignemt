@@ -3,7 +3,7 @@
 const accounts = require ('./accounts.js');
 const uuid = require('uuid');
 const logger = require("../utils/logger");
-const memberStore = require('../controllers/trainer.js');
+const memberStore = require('../models/trainer-store');
 
 const dashboard = {
   index(request, response) {
