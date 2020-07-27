@@ -20,7 +20,17 @@
       "id": "c5c65250-d019-11ea-aab0-e1e160b0695b",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Homer Simpson",
-      "stats": []
+      "stats": [
+        {
+          "id": "51779420-d025-11ea-b196-3517ca2bb5b0",
+          "weight": "1",
+          "chest": "2",
+          "thigh": "3",
+          "upperArm": "4",
+          "waist": "5",
+          "hips": "6"
+        }
+      ]
     }
   ]
 }
