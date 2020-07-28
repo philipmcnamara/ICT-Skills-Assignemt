@@ -5,8 +5,8 @@ const JsonStore = require('./json-store');
 
 const userStore = {
 
-  store: new JsonStore('./models/member-store.json', { users: [] }),
-  collection: 'users',
+  store: new JsonStore('./models/trainers.json', { trainers: [] }),
+  collection: 'trainers',
 
   getAllUsers() {
     return this.store.findAll(this.collection);
