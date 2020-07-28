@@ -13,13 +13,6 @@
       "email": "barney@tavern.com",
       "password": "test",
       "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
-    },
-    {
-      "firstName": "Bart",
-      "lastName": "Simpson",
-      "email": "bart@simpson.com",
-      "password": "test",
-      "id": "80f04dd0-d0bd-11ea-84b8-b7f4255de3db"
     }
   ]
 }

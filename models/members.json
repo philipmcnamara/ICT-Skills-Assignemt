@@ -1,0 +1,18 @@
+{
+  "members": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "id": ""
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "test",
+      "id": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19"
+    }
+  ]
+}
