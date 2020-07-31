@@ -1,4 +1,20 @@
 {
   "memberCollection": [
+    {
+      "id": "0ece7c60-d327-11ea-a4ca-990fd11b9fdc",
+      "userid": "a1545ce0-d326-11ea-8206-cf2bea342d34",
+      "name": "Lisa Simpson",
+      "stats": [
+        {
+          "id": "10fea2d0-d327-11ea-a4ca-990fd11b9fdc",
+          "weight": "5",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": ""
+        }
+      ]
+    }
   ]
 }
