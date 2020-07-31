@@ -1,59 +1,18 @@
 {
   "memberCollection": [
     {
-      "id": "5a5b5930-d018-11ea-b5fc-47359b612441",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "98b74950-d329-11ea-a0e8-61035b9c8848",
+      "userid": "83898890-d329-11ea-9fdb-1dabf0d474e2",
       "name": "Marge Simpson",
       "stats": [
         {
-          "id": "bae4d460-d019-11ea-aab0-e1e160b0695b",
-          "weight": "5",
-          "chest": "6",
-          "thigh": "7",
-          "upperArm": "8",
-          "waist": "9",
-          "hips": "10"
-        }
-      ]
-    },
-    {
-      "id": "c5c65250-d019-11ea-aab0-e1e160b0695b",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Homer Simpson",
-      "stats": [
-        {
-          "id": "51779420-d025-11ea-b196-3517ca2bb5b0",
+          "id": "9a86d930-d329-11ea-a0e8-61035b9c8848",
           "weight": "1",
-          "chest": "2",
-          "thigh": "3",
-          "upperArm": "4",
-          "waist": "5",
-          "hips": "6"
-        },
-        {
-          "id": "1d794510-d0bb-11ea-8ac9-932994b4dff3",
-          "weight": "5",
-          "chest": "6",
-          "thigh": "7",
-          "upperArm": "8",
-          "waist": "9",
-          "hips": "10"
-        }
-      ]
-    },
-    {
-      "id": "0dc06af0-d0ba-11ea-8ac9-932994b4dff3",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "name": "Bart Simpson",
-      "stats": [
-        {
-          "id": "1546aff0-d0ba-11ea-8ac9-932994b4dff3",
-          "weight": "2",
-          "chest": "3",
-          "thigh": "4",
-          "upperArm": "5",
-          "waist": "6",
-          "hips": "7"
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": ""
         }
       ]
     }
