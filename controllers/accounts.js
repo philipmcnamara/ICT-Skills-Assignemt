@@ -2,6 +2,7 @@
 
 const trainerstore = require('../models/tmember');
 const userstore = require('../models/member-store');
+const trainerStore = require('../models/trainer-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
 

@@ -15,6 +15,9 @@ const member = {
     };
     response.render('member', viewData);
   },
+  
+
+  
     deleteStat(request, response) {
     const memberId = request.params.id;
     const statId = request.params.statsId;
