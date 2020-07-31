@@ -1,4 +1,20 @@
 {
   "memberCollection": [
+    {
+      "id": "2cbf2e90-d32c-11ea-8f8d-8f231215f22c",
+      "userid": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19",
+      "name": "Philip McNamara",
+      "stats": [
+        {
+          "id": "2eac5890-d32c-11ea-8f8d-8f231215f22c",
+          "weight": "2",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": ""
+        }
+      ]
+    }
   ]
 }
