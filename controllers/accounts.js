@@ -2,7 +2,6 @@
 
 const trainerstore = require('../models/tmember');
 const userstore = require('../models/member-store');
-const trainerStore = require('../models/trainer-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
 
@@ -35,21 +34,11 @@ const accounts = {
   },
 
   register(request, response) {
-    
-    const loggedInUser = accounts.getCurrentUser(request);
     const user = request.body;
     user.id = uuid.v1();
-    const newMember = {
-      id: uuid.v1(),
-      userid: loggedInUser.id,
-      name: request.body.name,
-      stats: [],
-    };
-    logger.debug('Creating a new Member', newMember);
-    trainerStore.addMember(newMember);
+    userstore.addUser(user);
+    logger.info(`registering ${user.email}`);
     response.redirect('/');
-
-
   },
 
   authenticate(request, response) {
@@ -58,7 +47,8 @@ const accounts = {
     if (user) {
       response.cookie('member', user.email);
       logger.info(`logging in ${user.email}`);
-      response.redirect('/member/:id');
+      const loggedInUser = accounts.getCurrentUser(request);
+      response.redirect('/member/{{id}}');
     }
     else if (trainer){      
       response.cookie('trainer', trainer.email);

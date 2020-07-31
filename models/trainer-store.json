@@ -1,5 +1,5 @@
 {
-  "memberCollection": [
+  "memberCollection" : [
     {
       "id": "2cbf2e90-d32c-11ea-8f8d-8f231215f22c",
       "userid": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19",
@@ -24,11 +24,6 @@
           "hips": "7"
         }
       ]
-    },
-    {
-      "id": "515cc7d0-d354-11ea-92e7-b73c4c639cf5",
-      "userid": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19",
-      "stats": []
     }
   ]
 }
