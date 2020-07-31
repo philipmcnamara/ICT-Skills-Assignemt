@@ -3,6 +3,7 @@ const uuid = require('uuid');
 
 const logger = require('../utils/logger');
 const trainerStore = require('../models/trainer-store');
+const userStore = require('../models/member-store');
 
 const member = {
   index(request, response) {
@@ -10,7 +11,7 @@ const member = {
     logger.debug('Member id = ', memberId);
     const viewData = {
       name: 'Member',
-      member: trainerStore.getMember(memberId),
+      member: userStore.getUser(memberId),
     };
     response.render('member', viewData);
   },
