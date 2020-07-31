@@ -1,18 +1,11 @@
 {
   "members": [
     {
-      "firstName": "Maggie",
+      "firstName": "Homer",
       "lastName": "Simpson",
-      "email": "maggie@simpson.com",
+      "email": "homer@simpson.com",
       "password": "test",
-      "id": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19"
-    },
-    {
-      "firstName": "Bart",
-      "lastName": "Simpson",
-      "email": "bart@simpson.com",
-      "password": "test",
-      "id": "10230b90-d245-11ea-a1f5-35412f910e9d"
+      "id": "a1545ce0-d326-11ea-8206-cf2bea342d34"
     }
   ]
 }
