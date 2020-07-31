@@ -26,16 +26,9 @@
       ]
     },
     {
-      "id": "abb1e450-d353-11ea-86d4-535c3610d72d",
+      "id": "515cc7d0-d354-11ea-92e7-b73c4c639cf5",
       "userid": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19",
       "stats": []
-    },
-    {
-      "firstName": "Homer",
-      "lastName": "Simpson",
-      "email": "homer@simpson.com",
-      "password": "test",
-      "id": "abb28090-d353-11ea-86d4-535c3610d72d"
     }
   ]
 }
