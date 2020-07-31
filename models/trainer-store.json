@@ -1,20 +1,4 @@
 {
   "memberCollection": [
-    {
-      "id": "98b74950-d329-11ea-a0e8-61035b9c8848",
-      "userid": "83898890-d329-11ea-9fdb-1dabf0d474e2",
-      "name": "Marge Simpson",
-      "stats": [
-        {
-          "id": "9a86d930-d329-11ea-a0e8-61035b9c8848",
-          "weight": "1",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": ""
-        }
-      ]
-    }
   ]
 }
