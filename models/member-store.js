@@ -25,38 +25,38 @@ const userStore = {
     return this.store.findOneBy(this.collection, { email: email });
   },
 
-getAllMembers() {
+getAllUsers() {
     return this.store.findAll(this.collection);
   },
 
-  getMember(id) {
+  getUser(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
-  addMember(member) {
+  addUser(member) {
     this.store.add(this.collection, member);
     this.store.save();
   },
 
-  removeMember(id) {
+  removeUser(id) {
     const member = this.getMember(id);
     this.store.remove(this.collection, member);
     this.store.save();
   },
 
-  removeAllMembers() {
+  removeAllUsers() {
     this.store.removeAll(this.collection);
     this.store.save();
   },
 
   addStat(id, stat) {
-    const member = this.getMember(id);
+    const member = this.getUser(id);
     member.stats.push(stat);
     this.store.save();
   },
 
   removeStat(id, statId) {
-    const member = this.getMember(id);
+    const member = this.getUser(id);
     const stats = member.stats;
     _.remove(stats, { id: statId});
     this.store.save();
