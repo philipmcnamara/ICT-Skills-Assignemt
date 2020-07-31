@@ -47,7 +47,6 @@ const accounts = {
     if (user) {
       response.cookie('member', user.email);
       logger.info(`logging in ${user.email}`);
-      userstore.getID(user);
       response.redirect('/member/{{id}}');
     }
     else if (trainer){      
