@@ -17,6 +17,7 @@ const trainerStore = {
   },
 
   addMember(member) {
+    
     this.store.add(this.collection, member);
     this.store.save();
   },

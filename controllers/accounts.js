@@ -35,9 +35,21 @@ const accounts = {
   },
 
   register(request, response) {
+    
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newMember = {
+      id: uuid.v1(),
+      userid: loggedInUser.id,
+      name: request.body.name,
+      stats: [],
+    };
+    logger.debug('Creating a new Member', newMember);
+    trainerStore.addMember(newMember);
+    response.redirect('/dashboard');
+    
     const user = request.body;
     user.id = uuid.v1();
-    userstore.addUser(user);
+    trainerStore.addMember(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
   },
