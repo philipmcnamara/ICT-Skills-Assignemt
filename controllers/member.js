@@ -23,8 +23,11 @@ const member = {
     response.redirect('/member/' + memberId);
   },
     addStat(request, response) {
+    logger.info(`Entered addStat`);
     const memberId = request.params.id;
+    logger.info(`UserID: ${memberId}`);
     const member = userStore.getMember(memberId);
+    
     const newStat = {
       id: uuid.v1(),
       weight: request.body.weight,
