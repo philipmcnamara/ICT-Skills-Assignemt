@@ -1,6 +1,6 @@
 'use strict';
 
-const trainerstore = require('../models/tmember');
+const trainerstore = require('../models/trainer-store');
 const userstore = require('../models/member-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
@@ -47,12 +47,14 @@ const accounts = {
     if (user) {
       response.cookie('member', user.email);
       logger.info(`logging in ${user.email}`);
+      logger.info(`logging in member ${user.email}`);
       const loggedInUser = accounts.getCurrentUser(request);
       response.redirect('/member/{{id}}');
     }
     else if (trainer){      
       response.cookie('trainer', trainer.email);
       logger.info(`logging in ${trainer.email}`);
+      logger.info(`logging in trainer ${trainer.email}`);
       response.redirect('/dashboard');
     } 
     else {

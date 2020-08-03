@@ -48,6 +48,13 @@ const trainerStore = {
     getUserMembers(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   },
+   getTrainerById(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
+
+  getTrainerByEmail(email) {
+    return this.store.findOneBy(this.collection, { email: email });
+  },
 };
 
 module.exports = trainerStore;
