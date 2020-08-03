@@ -19,21 +19,10 @@ const dashboard = {
       member: userStore.getAllUsers(loggedInUser.id),
     };
     logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
-
-
-    const userEmail = request.cookies.member;
-    const trainerEmail = request.cookies.trainer;
-    if(userEmail != "")
-      {
-        response.render('userDashboard', viewData);
-      }
-    else
-      {
-        logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
-        return trainerStore.getTrainerByEmail(trainerEmail);
-      }
+      if (loggedInUser) 
+        {
     response.render('dashboard', viewData);
-        
+        }
   },
   
     deleteMember(request, response) {
