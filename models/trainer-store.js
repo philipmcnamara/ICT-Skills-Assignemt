@@ -48,10 +48,10 @@ const trainerStore = {
     this.store.save();
   },
   
-    getUserMembers(userid) {
+  getUserMembers(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   },
-   getTrainerById(id) {
+  getTrainerById(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
