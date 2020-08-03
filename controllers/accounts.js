@@ -45,11 +45,12 @@ const accounts = {
     const user = userstore.getUserByEmail(request.body.email);
     const trainer = trainerstore.getTrainerByEmail(request.body.email);
     if (user) {
+      //const id = user.id;
       response.cookie('member', user.email);
       logger.info(`logging in member ${user.email}`);
       logger.info(`logging in member ${user.id}`);
      // const loggedInUser = accounts.getCurrentUser(request);
-      response.redirect('/member/'+ id:);
+      response.redirect('/member/'+ user.id);
     }
     else if (trainer){      
       response.cookie('trainer', trainer.email);

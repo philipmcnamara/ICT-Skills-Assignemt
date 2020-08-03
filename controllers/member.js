@@ -26,7 +26,7 @@ const member = {
     logger.info(`Entered addStat`);
     const memberId = request.params.id;
     logger.info(`UserID: ${memberId}`);
-    const member = userStore.getMember(memberId);
+    const member = userStore.getUser(memberId);
     
     const newStat = {
       id: uuid.v1(),
