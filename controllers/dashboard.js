@@ -13,7 +13,8 @@ const dashboard = {
     logger.info(`Logged in User From Dashboard: ${loggedInUser.email}`);
     const viewData = {
       name: 'Trainer Dashboard',
-      member: trainerStore.getUserMembers(loggedInUser.id),
+      //member: trainerStore.getUserMembers(loggedInUser.id),
+      member: userStore.getAllUsers(),
     };
     logger.info('about to render', trainerStore.getAllMembers().members);
     response.render('dashboard', viewData);

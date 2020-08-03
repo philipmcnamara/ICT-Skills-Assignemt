@@ -6,6 +6,7 @@
       "email": "maggie@simpson.com",
       "password": "test",
       "id": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19",
+      "trainerId": ,
       "stats": [
         {
           "id": "2eac5890-d32c-11ea-8f8d-8f231215f22c",
@@ -24,15 +25,6 @@
           "upperArm": "5",
           "waist": "6",
           "hips": "7"
-        },
-        {
-          "id": "2abdf010-d58c-11ea-9108-5763f7ecb8a5",
-          "weight": "10",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": ""
         }
       ]
     },
