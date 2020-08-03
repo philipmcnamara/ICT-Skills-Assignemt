@@ -68,7 +68,8 @@
       "lastName": "gumble",
       "email": "barney@tavern.com",
       "password": "test",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "members": []
     }
   ]
 }
