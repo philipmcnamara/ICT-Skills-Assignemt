@@ -6,6 +6,8 @@ const trainerStore = require('../models/trainer-store');
 const accounts = require ('./accounts.js');
 const userStore = require('../models/member-store');
 
+
+
 const dashboard = {
     index(request, response) {
     logger.info('dashboard rendering');
@@ -17,7 +19,21 @@ const dashboard = {
       member: userStore.getAllUsers(loggedInUser.id),
     };
     logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
+
+
+    const userEmail = request.cookies.member;
+    const trainerEmail = request.cookies.trainer;
+    if(userEmail != "")
+      {
+        response.render('userDashboard', viewData);
+      }
+    else
+      {
+        logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
+        return trainerStore.getTrainerByEmail(trainerEmail);
+      }
     response.render('dashboard', viewData);
+        
   },
   
     deleteMember(request, response) {
