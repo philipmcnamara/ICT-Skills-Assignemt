@@ -67,7 +67,7 @@ const accounts = {
     //return trainerstore.getUserByEmail(userEmail);
   
     logger.info(`userEmail: ${userEmail}`);
-    logger.info(`Trainer: ${trainerstore.getTrainerByEmail(userEmail)}`);
+    logger.info(`Trainer: ${trainerstore.getTrainerByEmail(userEmail).id}`);
     return trainerstore.getTrainerByEmail(userEmail);
   },
 };
