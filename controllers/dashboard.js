@@ -10,7 +10,7 @@ const dashboard = {
     index(request, response) {
     logger.info('dashboard rendering');
     const loggedInUser = accounts.getCurrentUser(request);
-    logger.info(`Logged in User From Dashboard: ${loggedInUser}`);
+    logger.info(`Logged in User From Dashboard: ${loggedInUser.email}`);
     const viewData = {
       name: 'Trainer Dashboard',
       member: trainerStore.getUserMembers(loggedInUser.id),

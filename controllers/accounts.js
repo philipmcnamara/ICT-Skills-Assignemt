@@ -73,7 +73,7 @@ const accounts = {
     else
       {
         logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
-        return userstore.getUserByEmail(trainerEmail);
+        return trainerstore.getTrainerByEmail(trainerEmail);
       }
     
     //return trainerstore.getUserByEmail(userEmail);
