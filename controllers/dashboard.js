@@ -14,7 +14,7 @@ const dashboard = {
       name: 'Trainer Dashboard',
       member: trainerStore.getUserMembers(loggedInUser.id),
     };
-    logger.info('about to render', trainerStore.getAllMembers());
+    logger.info('about to render', trainerStore.getAllMembers().members);
     response.render('dashboard', viewData);
   },
   
