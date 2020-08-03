@@ -25,7 +25,7 @@ const userStore = {
     return this.store.findOneBy(this.collection, { email: email });
   },
 
-getAllUsers() {
+ getAllUsers() {
     return this.store.findAll(this.collection);
   },
 
@@ -62,7 +62,7 @@ getAllUsers() {
     this.store.save();
   },
   
-    getUserMembers(userid) {
+  getUserMembers(userid) {
     return this.store.findBy(this.collection, { userid: userid });
     }
 };

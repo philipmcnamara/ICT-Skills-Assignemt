@@ -4,13 +4,14 @@ const uuid = require('uuid');
 const logger = require("../utils/logger");
 const trainerStore = require('../models/trainer-store');
 const accounts = require ('./accounts.js');
+const userStore = require('../models/member-store');
 
 const dashboard = {
     index(request, response) {
     logger.info('dashboard rendering');
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
-      name: 'Member Dashboard',
+      name: 'Trainer Dashboard',
       member: trainerStore.getUserMembers(loggedInUser.id),
     };
     logger.info('about to render', trainerStore.getAllMembers());
