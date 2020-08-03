@@ -64,11 +64,23 @@ const accounts = {
 
   getCurrentUser(request) {
     const userEmail = request.cookies.member;
+    const trainerEmail = request.cookies.trainer;
+    if(userEmail != "")
+      {
+        logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
+        return userstore.getUserByEmail(userEmail);
+      }
+    else
+      {
+        logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
+        return userstore.getUserByEmail(trainerEmail);
+      }
+    
     //return trainerstore.getUserByEmail(userEmail);
   
-    logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
+   /* logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
     logger.info(`User Id returned from getCurrentUser:: ${userstore.getUserByEmail(userEmail).id}`);
-    return userstore.getUserByEmail(userEmail);
+    return userstore.getUserByEmail(userEmail);*/
   },
   getCurrentTrainer(request) {
     const userEmail = request.cookies.trainer;
