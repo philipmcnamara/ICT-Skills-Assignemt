@@ -7,8 +7,8 @@ const userStore = require('../models/member-store');
 const member = {
   index(request, response) {
     const memberId = request.params.id;
-    logger.debug(`MemberId test: ( ${memberId}`);
-    logger.debug('Member id = ', memberId);
+    logger.info(`MemberId test: ( ${memberId}`);
+    logger.info('Member id = ', memberId);
     const viewData = {
       name: 'Member',
       member: userStore.getUser(memberId),
