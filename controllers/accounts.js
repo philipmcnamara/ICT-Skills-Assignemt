@@ -74,22 +74,10 @@ const accounts = {
       {
         logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
         return trainerstore.getTrainerByEmail(trainerEmail);
-      }
-    
-    //return trainerstore.getUserByEmail(userEmail);
-  
-   /* logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
-    logger.info(`User Id returned from getCurrentUser:: ${userstore.getUserByEmail(userEmail).id}`);
-    return userstore.getUserByEmail(userEmail);*/
+      }   
   },
-  getCurrentTrainer(request) {
-    const userEmail = request.cookies.trainer;
-    //return trainerstore.getUserByEmail(userEmail);
   
-    logger.info(`userEmail Current user: ${userEmail}`);
-    logger.info(`Trainer: ${trainerstore.getTrainerByEmail(userEmail).id}`);
-    return trainerstore.getTrainerByEmail(userEmail);
-  },
+
 };
 
 module.exports = accounts;
