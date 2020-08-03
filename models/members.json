@@ -6,7 +6,7 @@
       "email": "maggie@simpson.com",
       "password": "test",
       "id": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19",
-      "trainerId": ,
+      "trainerId": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "stats": [
         {
           "id": "2eac5890-d32c-11ea-8f8d-8f231215f22c",
@@ -34,6 +34,7 @@
       "email": "bart@simpson.com",
       "password": "test",
       "id": "10230b90-d245-11ea-a1f5-35412f910e9d",
+      "trainerId": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "stats": [
         {
           "id": "2eac5890-d32c-11ea-8f8d-8f231215f22c",
@@ -60,7 +61,8 @@
       "lastName": "Test",
       "email": "grace@tavern.com",
       "password": "test",
-      "id": "6d8d4bb0-d583-11ea-9d50-8900eec46ccc"
+      "id": "6d8d4bb0-d583-11ea-9d50-8900eec46ccc",
+      "trainerId": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
     }
   ]
 }

@@ -32,6 +32,9 @@ const userStore = {
   getUser(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
+  getUser(trainerId) {
+    return this.store.findAll(this.collection, { trainerId: trainerId });
+  },
 
   addUser(member) {
     this.store.add(this.collection, member);
