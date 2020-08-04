@@ -10,7 +10,7 @@ const trainerStore = {
   
   //store: new JsonStore('./models/trainers.json', { trainers: [] }),
   //collection: 'trainers',
-  store: new JsonStore('./models/trainer-store.json', { trainers: [] }),
+  store: new JsonStore('./models/trainers', { trainers: [] }),
   collection: 'trainers',
 
   getAllMembers() {
