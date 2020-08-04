@@ -22,6 +22,24 @@ const dashboard = {
     response.render('dashboard', viewData);
   },
   
+  
+
+    const userEmail = request.cookies.member;
+    const trainerEmail = request.cookies.trainer;
+    if(userEmail != "")
+      {
+        response.render('userDashboard', viewData);
+      }
+    else
+      {
+        logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
+        return trainerStore.getTrainerByEmail(trainerEmail);
+      }
+    response.render('dashboard', viewData);
+        
+  },
+  
+  
     deleteMember(request, response) {
     const memberId = request.params.id;
     logger.debug(`Deleting Member( ${memberId}`);
