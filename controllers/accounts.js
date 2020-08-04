@@ -4,7 +4,7 @@ const trainerstore = require('../models/trainer-store');
 const userstore = require('../models/member-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
-const newMem = require('.../controllers/dashboard');
+
 
 const accounts = {
 
@@ -37,7 +37,6 @@ const accounts = {
   register(request, response) {
     const user = request.body;
     user.id = uuid.v1();
-    //newMem.addMember(user);
     userstore.addUser(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
@@ -51,7 +50,6 @@ const accounts = {
       response.cookie('member', user.email);
       logger.info(`logging in member ${user.email}`);
       logger.info(`logging in member ${user.id}`);
-     // const loggedInUser = accounts.getCurrentUser(request);
       response.redirect('/member/'+ user.id);
     }
     else if (trainer){      
