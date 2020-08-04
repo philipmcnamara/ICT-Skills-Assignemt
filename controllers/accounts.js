@@ -44,7 +44,7 @@ const accounts = {
 
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
-    const trainer = trainerstore.getTrainerByEmail(request.body.email);
+    const trainer = trainerstore.getTrainerByEmail(request.cookies.trainer);
     //logger.info(`logging in member ${user.email}`);
     //logger.info(`logging in trainer ${trainer.id}`);
     if (user) {
