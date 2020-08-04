@@ -20,7 +20,7 @@ const member = {
     const statId = request.params.statsId;
     logger.debug(`Deleting Stat ${statId} from Member ${memberId}`);
     userStore.removeStat(memberId, statId);
-    response.redirect('/member/' + memberId);
+    response.redirect('/Member/' + memberId);
   },
     addStat(request, response) {
     logger.info(`Entered addStat`);
