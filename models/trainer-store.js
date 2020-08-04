@@ -8,10 +8,9 @@ const trainerStore = {
   //store: new JsonStore('./models/trainer-store.json', { memberCollection: [] }),
   //collection: 'memberCollection',
   
-  //store: new JsonStore('./models/trainers.json', { trainers: [] }),
-  //collection: 'trainers',
-  store: new JsonStore('./models/trainers', { trainers: [] }),
+  store: new JsonStore('./models/trainers.json', { trainers: [] }),
   collection: 'trainers',
+  
 
   getAllMembers() {
     return this.store.findAll(this.collection);
@@ -53,6 +52,7 @@ const trainerStore = {
   getUserMembers(id) {
     return this.store.findBy(this.collection, { id: id });
   },
+  
   getTrainerById(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },

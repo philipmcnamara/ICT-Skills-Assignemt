@@ -19,10 +19,7 @@ const dashboard = {
       member: userStore.getAllUsers(loggedInUser.id),
     };
     logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
-      if (loggedInUser) 
-        {
     response.render('dashboard', viewData);
-        }
   },
   
     deleteMember(request, response) {
