@@ -4,7 +4,7 @@ const trainerstore = require('../models/trainer-store');
 const userstore = require('../models/member-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
-const newMem = require('.../controllers/dashboard');
+//const newMem = require('.../controllers/dashboard');
 
 const accounts = {
 
