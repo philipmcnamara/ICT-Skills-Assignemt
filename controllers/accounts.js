@@ -4,6 +4,7 @@ const trainerstore = require('../models/trainer-store');
 const userstore = require('../models/member-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
+const newMem = require('.../controllers/dashboard');
 
 const accounts = {
 
@@ -36,6 +37,7 @@ const accounts = {
   register(request, response) {
     const user = request.body;
     user.id = uuid.v1();
+    //newMem.addMember(user);
     userstore.addUser(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
