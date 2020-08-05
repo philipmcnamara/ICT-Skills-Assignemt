@@ -71,6 +71,16 @@
           "hips": ""
         }
       ]
+    },
+    {
+      "name": "Philip McNamara",
+      "gender": "male",
+      "email": "philipmcnamara1@gmail.com",
+      "password": "test",
+      "address": "8 Tynock,",
+      "height": "180",
+      "startingWeight": "90",
+      "id": "a8c79220-d723-11ea-b326-ad71753403d3"
     }
   ]
 }
