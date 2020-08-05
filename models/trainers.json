@@ -1,18 +1,3 @@
 {
-  "trainers": [
-    {
-      "firstName": "moe",
-      "lastName": "sizlack",
-      "email": "moe@tavern.com",
-      "password": "test",
-      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
-    },
-    {
-      "firstName": "barney",
-      "lastName": "gumble",
-      "email": "barney@tavern.com",
-      "password": "test",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
-    }
-  ]
+  "trainers": []
 }
