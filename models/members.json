@@ -1,86 +1,25 @@
 {
   "members": [
     {
-      "firstName": "Maggie",
-      "lastName": "Simpson",
-      "email": "maggie@simpson.com",
-      "password": "test",
-      "id": "a19d34a0-d0d4-11ea-94c6-eba6cff2ce19",
-      "stats": [
-        {
-          "id": "205d8700-d331-11ea-b690-b5ff2a4f59b6",
-          "weight": "1",
-          "chest": "6",
-          "thigh": "3",
-          "upperArm": "5",
-          "waist": "6",
-          "hips": "7"
-        },
-        {
-          "id": "964ee3c0-d5b9-11ea-b485-2fffa789f76f",
-          "weight": "5",
-          "chest": "6",
-          "thigh": "7",
-          "upperArm": "4",
-          "waist": "5",
-          "hips": "6"
-        }
-      ]
-    },
-    {
-      "firstName": "Bart",
-      "lastName": "Simpson",
-      "email": "bart@simpson.com",
-      "password": "test",
-      "id": "10230b90-d245-11ea-a1f5-35412f910e9d",
-      "stats": [
-        {
-          "id": "2eac5890-d32c-11ea-8f8d-8f231215f22c",
-          "weight": "2",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": ""
-        },
-        {
-          "id": "205d8700-d331-11ea-b690-b5ff2a4f59b6",
-          "weight": "1",
-          "chest": "6",
-          "thigh": "3",
-          "upperArm": "5",
-          "waist": "6",
-          "hips": "7"
-        }
-      ]
-    },
-    {
-      "firstName": "Grace",
-      "lastName": "Test",
-      "email": "grace@tavern.com",
-      "password": "test",
-      "id": "6d8d4bb0-d583-11ea-9d50-8900eec46ccc",
-      "stats": [
-        {
-          "id": "dca84d70-d695-11ea-9292-1ded29673a4c",
-          "weight": "5",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": ""
-        }
-      ]
-    },
-    {
-      "name": "Philip McNamara",
+      "name": "Homer Simpson",
       "gender": "male",
-      "email": "philipmcnamara1@gmail.com",
+      "email": "homer@simpson.com",
       "password": "test",
-      "address": "8 Tynock,",
+      "address": "Test",
       "height": "180",
       "startingWeight": "90",
-      "id": "a8c79220-d723-11ea-b326-ad71753403d3"
+      "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
+      "stats": [
+        {
+          "id": "8f5665e0-d724-11ea-a07f-cb67ee6f7004",
+          "weight": "10",
+          "chest": "11",
+          "thigh": "12",
+          "upperArm": "13",
+          "waist": "14",
+          "hips": "15"
+        }
+      ]
     }
   ]
 }
