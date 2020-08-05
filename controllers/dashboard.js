@@ -8,7 +8,7 @@ const userStore = require('../models/member-store');
 
 
  
-  const dashboard = {
+const dashboard = {
     index(request, response) {
     logger.info('dashboard rendering');
     const loggedInUser = accounts.getCurrentUser(request);
@@ -19,24 +19,9 @@ const userStore = require('../models/member-store');
       member: userStore.getAllUsers(loggedInUser.id),
     };
     logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
-
-    const userEmail = request.cookies.member;
-    const trainerEmail = request.cookies.trainer;
-    if(userEmail != "")
-      {
-        logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
-        response.cookie('member', loggedInUser.email);
-        logger.info(`logging in member ${loggedInUser.email}`);
-        logger.info(`logging in member ${loggedInUser.id}`);
-        response.redirect('/member/'+ loggedInUser.id);
-        //response.render('userDashboard', viewData);
-      }
-    else
-      {
-        logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
-        response.render('dashboard', viewData);
-      }
+    response.render('dashboard', viewData);
   },
+
   
     deleteMember(request, response) {
     const memberId = request.params.id;
