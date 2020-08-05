@@ -7,12 +7,11 @@ const accounts = require ('./accounts.js');
 const userStore = require('../models/member-store');
 
 
-
-
-  
+ 
   const dashboard = {
     index(request, response) {
     logger.info('dashboard rendering');
+    //const user = userStore.getUserByEmail(request.body.email);
     const loggedInUser = accounts.getCurrentUser(request);
     logger.info(`Logged in User From Dashboard: ${loggedInUser.email}`);
     const viewData = {
@@ -26,14 +25,17 @@ const userStore = require('../models/member-store');
     const trainerEmail = request.cookies.trainer;
     if(userEmail != "")
       {
+        const user = userStore.getUserByEmail(request.body.email);
         logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
-        //return userstore.getUserByEmail(userEmail);
-        response.render('userDashboard', viewData);
+        //response.cookie('member', user.email);
+        logger.info(`logging in member ${user.email}`);
+        logger.info(`logging in member ${user.id}`);
+        response.redirect('/member/'+ user.id);
+        //response.render('userDashboard', viewData);
       }
     else
       {
         logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
-        //return trainerStore.getTrainerByEmail(trainerEmail);
         response.render('dashboard', viewData);
       }
   },
