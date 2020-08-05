@@ -27,7 +27,6 @@ const userStore = require('../models/member-store');
         logger.info(`logging in member ${loggedInUser.email}`);
         logger.info(`logging in member ${loggedInUser.id}`);
         response.redirect('/member/'+ loggedInUser.id);
-        //response.render('userDashboard', viewData);
       }
     else
       {
