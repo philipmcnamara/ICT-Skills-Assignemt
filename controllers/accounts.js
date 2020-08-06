@@ -48,7 +48,8 @@ const accounts = {
     //logger.info(`logging in member ${user.email}`);
     //logger.info(`logging in trainer ${trainer.id}`);
     if (user) {
-      response.cookie('member', user.email);
+      //response.cookie('member', user.email);
+      response.cookie('member', user.password);
       logger.info(`logging in member ${user.email}`);
       logger.info(`logging in member ${user.id}`);
       response.redirect('/member/'+ user.id);

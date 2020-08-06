@@ -3,6 +3,7 @@ const uuid = require('uuid');
 
 const logger = require('../utils/logger');
 const userStore = require('../models/member-store');
+const accounts = require ('./accounts.js');
 
 const member = {
   index(request, response) {
@@ -40,8 +41,8 @@ const member = {
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
   },
-
-
+  
+  
     calculateMemberBMI (request) {   
         
         const BMI = 0;
@@ -57,7 +58,7 @@ const member = {
             memberStatWeight = stats.get(mostRecent).getWeight();
         }
         BMI= ((memberStatWeight)/(calcHeight*calcHeight)); //calculates BMI
-        roundBMI = (float) (Math.round(BMI*100)/100.0); // rounds to 2 decimals
+        roundBMI = ((BMI*100)/100.0); // rounds to 2 decimals
         return roundBMI;
     }
 
