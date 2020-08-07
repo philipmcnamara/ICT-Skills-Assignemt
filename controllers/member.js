@@ -8,6 +8,7 @@ const accounts = require ('./accounts.js');
 const member = {
   index(request, response) {
     const memberId = request.params.id;
+    
     logger.info(`MemberId test: ( ${memberId}`);
     logger.info('Member id = ', memberId);
     const viewData = {
@@ -47,6 +48,7 @@ const member = {
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
   }
+  
   
 };
 

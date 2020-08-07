@@ -39,6 +39,7 @@ const accounts = {
     user.id = uuid.v1();
     userstore.addUser(user);
     user.stats = [];
+    user.stat
     logger.info(`registering ${user.email}`);
     response.redirect('/');
   },

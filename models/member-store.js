@@ -73,7 +73,13 @@ const userStore = {
   getUserMembers(userid) {
     return this.store.findBy(this.collection, { userid: userid });
     },
-
+  getBMI(id){
+    const member = this.getUser(id);
+    const recentStats = member.stats.length -1;
+   
+    const bmi = member.stats.indexOf(recentStats).bmi;
+    return bmi;
+  }
   
 };
 module.exports = userStore;

@@ -26,9 +26,7 @@ const userStore = require('../models/member-store');
     const trainerEmail = request.cookies.trainer;
     if(userEmail != "")
       {
-        const bmi = member.getBMI();
-        logger.info(`BMI111111111111111111: ${bmi}`);
-        logger.info(`TEST1: `);
+     
         logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
         response.cookie('member', loggedInUser.email);
   //      logger.info(`logging in member ${loggedInUser.email}`);
