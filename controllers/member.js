@@ -39,10 +39,36 @@ const member = {
       hips: request.body.hips,
     };
     userStore.addStat(memberId, newStat);
+    member.calculateMemberBMI(request);
     response.redirect('/member/' + memberId);
   },
   
-  
+    calculateMemberBMI (request) {   
+
+    const BMI = 0;
+    const roundBMI = 0;
+    const calcHeight = 0;
+    const memberStatWeight =0;
+    const user = accounts.getCurrentUser(request);
+    const stats = user.stats;
+
+    logger.info(`logging in member ${BMI}`);
+        logger.info(`logging in member ${roundBMI}`);
+        logger.info(`logging in member ${calcHeight}`);
+        logger.info(`logging in member ${memberStatWeight}`);
+        logger.info(`logging in member ${user.email}`);
+            logger.info(`logging in member ${stats.height}`);
+    
+    
+    /*if(stats.size() != 0)
+    {
+        const mostRecent = stats.size() -1;
+        memberStatWeight = stats.get(mostRecent).getWeight();
+    }
+    BMI= ((memberStatWeight)/(calcHeight*calcHeight)); //calculates BMI
+    roundBMI = ((BMI*100)/100.0); // rounds to 2 decimals
+    return roundBMI;   */
+}
 
   
 };

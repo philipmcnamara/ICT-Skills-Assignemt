@@ -18,6 +18,42 @@
           "upperArm": "13",
           "waist": "14",
           "hips": "15"
+        },
+        {
+          "id": "42729d30-d8d6-11ea-9f8b-edb653f262f0",
+          "weight": "1",
+          "chest": "2",
+          "thigh": "3",
+          "upperArm": "4",
+          "waist": "5",
+          "hips": "6"
+        },
+        {
+          "id": "9f129ea0-d8d6-11ea-bb85-cfaaaa9c96af",
+          "weight": "1",
+          "chest": "2",
+          "thigh": "3",
+          "upperArm": "4",
+          "waist": "5",
+          "hips": "6"
+        },
+        {
+          "id": "b4afea10-d8d6-11ea-95ac-79cae395d254",
+          "weight": "1",
+          "chest": "2",
+          "thigh": "3",
+          "upperArm": "4",
+          "waist": "5",
+          "hips": "6"
+        },
+        {
+          "id": "c0345ec0-d8d6-11ea-bab0-1586add4f1c9",
+          "weight": "1",
+          "chest": "2",
+          "thigh": "3",
+          "upperArm": "4",
+          "waist": "5",
+          "hips": "6"
         }
       ]
     },
@@ -30,8 +66,7 @@
       "height": "161",
       "startingWeight": "75",
       "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
-      "stats": [
-      ]
+      "stats": []
     }
   ]
 }
