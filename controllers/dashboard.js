@@ -10,11 +10,11 @@ const userStore = require('../models/member-store');
   const dashboard = {
     index(request, response) {
     
-    logger.info('dashboard rendering');
+    //logger.info('dashboard rendering');
   
     const loggedInUser = accounts.getCurrentUser(request);
     //logger.info(`Logged in User From Dashboard: ${loggedInUser.email}`);
-      logger.info(`logging in member ${loggedInUser.email}`);
+    //  logger.info(`logging in member ${loggedInUser.email}`);
     const viewData = {
       name: 'Trainer Dashboard',
       //member: trainerStore.getUserMembers(loggedInUser.id),
@@ -26,12 +26,13 @@ const userStore = require('../models/member-store');
     const trainerEmail = request.cookies.trainer;
     if(userEmail != "")
       {
-        const bmi = member.getBMI;
+        const bmi = member.getBMI();
         logger.info(`BMI111111111111111111: ${bmi}`);
+        logger.info(`TEST1: `);
         logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
         response.cookie('member', loggedInUser.email);
-        logger.info(`logging in member ${loggedInUser.email}`);
-        logger.info(`logging in member ${loggedInUser.id}`);
+  //      logger.info(`logging in member ${loggedInUser.email}`);
+   //     logger.info(`logging in member ${loggedInUser.id}`);
         response.redirect('/member/'+ loggedInUser.id);
       }
     else if (trainerEmail != "")
@@ -48,7 +49,7 @@ const userStore = require('../models/member-store');
   
     deleteMember(request, response) {
     const memberId = request.params.id;
-    logger.debug(`Deleting Member( ${memberId}`);
+//    logger.debug(`Deleting Member( ${memberId}`);
     trainerStore.removeMember(memberId);
     response.redirect('/dashboard');
   },
@@ -61,7 +62,7 @@ const userStore = require('../models/member-store');
       name: request.body.name,
       stats: [],
     };
-    logger.debug('Creating a new Member', newMember);
+  //  logger.debug('Creating a new Member', newMember);
     trainerStore.addMember(newMember);
     response.redirect('/dashboard');
   },
