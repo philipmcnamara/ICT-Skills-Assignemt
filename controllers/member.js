@@ -30,8 +30,8 @@ const member = {
     const member = userStore.getUser(memberId);
     const height = member.height;
     const weight = request.body.weight;
-    const BMI= ((weight)/(height*height)); //calculates BMI
-    const roundBMI = (Math.round(BMI*10000)/1.00);
+    const BMI= ((weight)/(height*height))*10000; //calculates BMI
+    const roundBMI = (Math.floor((BMI*100)/100));
     
     
     const newStat = {
