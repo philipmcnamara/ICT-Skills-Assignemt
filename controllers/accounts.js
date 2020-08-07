@@ -52,10 +52,12 @@ const accounts = {
     },
 
   authenticate(request, response) {
+
     const userEmail = userstore.getUserByEmail(request.body.email);
     const userPassword = userstore.getUserByPassword(request.body.password);
-    const trainerEmail = trainerstore.getTrainerByEmail(request.body.trainer);
+    const trainerEmail = trainerstore.getTrainerByEmail(request.body.email);
     const trainerPassword = trainerstore.getTrainerByPassword(request.body.password);
+    logger.info(`logging in member ${trainerEmail}`);
     
     if (userEmail && userPassword) {
       response.cookie('member', userEmail.email);
