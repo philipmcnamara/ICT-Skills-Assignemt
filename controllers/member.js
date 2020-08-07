@@ -29,6 +29,7 @@ const member = {
     logger.info(`UserID: ${memberId}`);
     const member = userStore.getUser(memberId);
     
+    
     const newStat = {
       id: uuid.v1(),
       weight: request.body.weight,
@@ -41,9 +42,14 @@ const member = {
     userStore.addStat(memberId, newStat);
     member.calculateMemberBMI(request);
     response.redirect('/member/' + memberId);
-  },
+  }
   
-    calculateMemberBMI (request) {   
+};
+
+
+module.exports = member;
+
+  calculateMemberBMI (request, response) {   
 
     const BMI = 0;
     const roundBMI = 0;
@@ -53,11 +59,11 @@ const member = {
     const stats = user.stats;
 
     logger.info(`logging in member ${BMI}`);
-        logger.info(`logging in member ${roundBMI}`);
-        logger.info(`logging in member ${calcHeight}`);
-        logger.info(`logging in member ${memberStatWeight}`);
-        logger.info(`logging in member ${user.email}`);
-            logger.info(`logging in member ${stats.height}`);
+    logger.info(`logging in member ${roundBMI}`);
+    logger.info(`logging in member ${calcHeight}`);
+    logger.info(`logging in member ${memberStatWeight}`);
+    logger.info(`logging in member ${user.email}`);
+    logger.info(`logging in member ${stats.height}`);
     
     
     /*if(stats.size() != 0)
@@ -69,9 +75,3 @@ const member = {
     roundBMI = ((BMI*100)/100.0); // rounds to 2 decimals
     return roundBMI;   */
 }
-
-  
-};
-
-
-module.exports = member;
