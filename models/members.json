@@ -89,6 +89,16 @@
           "waist": "",
           "hips": "",
           "bmi": 27
+        },
+        {
+          "id": "b8f38300-d8dd-11ea-8d1c-93e552aa6afa",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78
         }
       ]
     },
