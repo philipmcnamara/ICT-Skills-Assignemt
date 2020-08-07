@@ -11,78 +11,34 @@
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
-          "id": "8f5665e0-d724-11ea-a07f-cb67ee6f7004",
-          "weight": "10",
-          "chest": "11",
-          "thigh": "12",
-          "upperArm": "13",
-          "waist": "14",
-          "hips": "15"
+          "id": "26cf03c0-d8db-11ea-8030-25c431c4326d",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 28
         },
         {
-          "id": "42729d30-d8d6-11ea-9f8b-edb653f262f0",
-          "weight": "1",
-          "chest": "2",
-          "thigh": "3",
-          "upperArm": "4",
-          "waist": "5",
-          "hips": "6"
+          "id": "88870950-d8db-11ea-aba2-d1f9c6bc5768",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 0.0028
         },
         {
-          "id": "9f129ea0-d8d6-11ea-bb85-cfaaaa9c96af",
-          "weight": "1",
-          "chest": "2",
-          "thigh": "3",
-          "upperArm": "4",
-          "waist": "5",
-          "hips": "6"
-        },
-        {
-          "id": "b4afea10-d8d6-11ea-95ac-79cae395d254",
-          "weight": "1",
-          "chest": "2",
-          "thigh": "3",
-          "upperArm": "4",
-          "waist": "5",
-          "hips": "6"
-        },
-        {
-          "id": "c0345ec0-d8d6-11ea-bab0-1586add4f1c9",
-          "weight": "1",
-          "chest": "2",
-          "thigh": "3",
-          "upperArm": "4",
-          "waist": "5",
-          "hips": "6"
-        },
-        {
-          "id": "3f13c550-d8d7-11ea-8292-bf00ae37421d",
-          "weight": "1",
-          "chest": "2",
-          "thigh": "7",
-          "upperArm": "13",
-          "waist": "6",
-          "hips": "10"
-        },
-        {
-          "id": "666d8da0-d8d9-11ea-a816-6f149da62c56",
-          "weight": "10",
-          "chest": "6",
-          "thigh": "7",
-          "upperArm": "8",
-          "waist": "5",
-          "hips": "7",
-          "bmi": 0.00030864197530864197
-        },
-        {
-          "id": "82cce3b0-d8d9-11ea-b446-cfe683636e1f",
-          "weight": "150",
-          "chest": "6",
-          "thigh": "4",
-          "upperArm": "5",
-          "waist": "9",
-          "hips": "7",
-          "bmi": 0.004629629629629629
+          "id": "a805eee0-d8db-11ea-b440-0d9eef776046",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 28
         }
       ]
     },

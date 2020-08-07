@@ -31,6 +31,7 @@ const member = {
     const height = member.height;
     const weight = request.body.weight;
     const BMI= ((weight)/(height*height)); //calculates BMI
+    const roundBMI = (Math.round(BMI*10000)/1.00);
     
     
     const newStat = {
@@ -41,7 +42,7 @@ const member = {
       upperArm: request.body.upperArm,
       waist: request.body.waist,
       hips: request.body.hips,
-      bmi: BMI
+      bmi: roundBMI
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
