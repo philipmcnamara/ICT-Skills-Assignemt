@@ -53,10 +53,10 @@ const accounts = {
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
     const trainer = trainerstore.getTrainerByEmail(request.cookies.trainer);
-    //logger.info(`logging in member ${user.email}`);
-    //logger.info(`logging in trainer ${trainer.id}`);
+    logger.info(`logging in member ${user.email}`);
+    logger.info(`logging in trainer ${trainer.id}`);
     if (user) {
-      response.cookie('member', user.email && user.checkMemberPassword);
+      response.cookie('member', user.email);
       logger.info(`logging in member ${user.email}`);
       logger.info(`logging in member ${user.id}`);
       response.redirect('/member/'+ user.id);
