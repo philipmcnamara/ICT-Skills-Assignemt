@@ -47,7 +47,7 @@ const member = {
         
         const BMI = 0;
         const roundBMI = 0;
-        const loggedInUser = accounts.getCurrentUser(request);
+        const loggedInUser = accounts.getCurrentUser();
         const calcHeight = member.getHeight();
         const stats = member.stats;
         const memberStatWeight =0;
@@ -61,7 +61,25 @@ const member = {
         roundBMI = ((BMI*100)/100.0); // rounds to 2 decimals
         return roundBMI;
     }
+  
+      CalculateMemberBMI()
+    {
+        float BMI = 0;
+        float roundBMI;
+        Member member = getLoggedInMember();
+        float calcHeight = member.getHeight();
+        List<Stat> stats = member.stats;
+        float memberStatWeight =0;
 
+        if(stats.size() != 0)
+        {
+            int mostRecent = stats.size() -1;
+            memberStatWeight = stats.get(mostRecent).getWeight();
+        }
+        BMI= ((memberStatWeight)/(calcHeight*calcHeight)); //calculates BMI
+        roundBMI = (float) (Math.round(BMI*100)/100.0); // rounds to 2 decimals
+        return roundBMI;
+    }
 
 };
 
