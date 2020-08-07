@@ -28,11 +28,15 @@ const userStore = require('../models/member-store');
         logger.info(`logging in member ${loggedInUser.id}`);
         response.redirect('/member/'+ loggedInUser.id);
       }
-    else
+    else if (trainerEmail != "")
       {
         logger.info(`Trainer Email returned from getCurrentUser: ${trainerEmail}`);
         response.render('dashboard', viewData);
       }
+      else
+        {
+          response.render('/', viewData);
+        }
   },
 
   
