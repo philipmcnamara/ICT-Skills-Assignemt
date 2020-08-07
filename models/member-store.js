@@ -1,5 +1,8 @@
 'use strict';
 
+const accounts = require ('../controllers/accounts.js');
+const logger = require('../utils/logger');
+
 const _ = require('lodash');
 const JsonStore = require('./json-store');
 
@@ -77,18 +80,28 @@ const userStore = {
     const BMI = 0;
     const roundBMI = 0;
     const calcHeight = 0;
-    const stats = member.stats;
     const memberStatWeight =0;
+    const user = accounts.getCurrentUser();
+    const stats = user.stats;
 
-    if(stats.size() != 0)
+    logger.info(`logging in member ${BMI}`);
+        logger.info(`logging in member ${roundBMI}`);
+        logger.info(`logging in member ${calcHeight}`);
+        logger.info(`logging in member ${memberStatWeight}`);
+        logger.info(`logging in member ${user.email}`);
+            logger.info(`logging in member ${stats.height}`);
+    
+    
+    /*if(stats.size() != 0)
     {
         const mostRecent = stats.size() -1;
         memberStatWeight = stats.get(mostRecent).getWeight();
     }
     BMI= ((memberStatWeight)/(calcHeight*calcHeight)); //calculates BMI
     roundBMI = ((BMI*100)/100.0); // rounds to 2 decimals
-    return roundBMI;
+    return roundBMI;   */
 }
-  
+
+
 };
 module.exports = userStore;

@@ -79,7 +79,7 @@ const accounts = {
     const trainerEmail = request.cookies.trainer;
     if(userEmail != "")
       {
-        logger.info(`User 888888888888888888888888888888 Email returned from getCurrentUser: ${userEmail}`);
+        logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
         return userstore.getUserByEmail(userEmail);
       }
     else
