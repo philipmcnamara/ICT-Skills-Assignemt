@@ -55,14 +55,13 @@ const accounts = {
     const userPassword = userstore.getUserByPassword(request.body.password);
     const trainerEmail = trainerstore.getTrainerByEmail(request.cookies.trainer);
     const trainerPassword = trainerstore.getTrainerByPassword(request.cookies.password);
-    //logger.info(`logging in member ${user.email}`);
-    //logger.info(`logging in trainer ${trainerEmail.id}`);
+    
     if (userEmail && userPassword) {
       response.cookie('member', userEmail.password);
       logger.info(`logging in member ${userEmail.email}`);
       response.redirect('/member/'+ userEmail.id);
     }
-    else if (trainerEmail) {      
+    else if (trainerEmail && trainerPassword) {      
       response.cookie('trainer', trainerEmail.email);
       logger.info(`logging in trainer ${trainerEmail.email}`);
       response.redirect('/dashboard');

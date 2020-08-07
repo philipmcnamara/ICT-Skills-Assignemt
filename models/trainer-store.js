@@ -63,8 +63,9 @@ const trainerStore = {
   },
   
   getTrainerByPassword(password) {
-    return this.store.findOneBy(this.collection, { password: pass });
+    return this.store.findOneBy(this.collection, { password: password });
   }
+  
 };
 
 module.exports = trainerStore;

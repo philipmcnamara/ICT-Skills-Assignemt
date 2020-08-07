@@ -20,6 +20,16 @@
           "hips": "15"
         }
       ]
+    },
+    {
+      "name": "maggie",
+      "gender": "female",
+      "email": "maggie@simpson.com",
+      "password": "test",
+      "address": "test",
+      "height": "150",
+      "startingWeight": "60",
+      "id": "89f91510-d8c9-11ea-ad5e-1fa1f266c13e"
     }
   ]
 }
