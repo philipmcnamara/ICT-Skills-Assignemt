@@ -29,7 +29,20 @@
       "address": "test",
       "height": "150",
       "startingWeight": "60",
-      "id": "89f91510-d8c9-11ea-ad5e-1fa1f266c13e"
+      "id": "89f91510-d8c9-11ea-ad5e-1fa1f266c13e",
+      "stats": []
+    },
+    {
+      "name": "Bart Simpson",
+      "gender": "male",
+      "email": "bart@simpson.com",
+      "password": "test",
+      "address": "test",
+      "height": "161",
+      "startingWeight": "75",
+      "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
+      "stats": [
+      ]
     }
   ]
 }
