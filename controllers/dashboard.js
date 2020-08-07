@@ -14,9 +14,9 @@ const userStore = require('../models/member-store');
     const viewData = {
       name: 'Trainer Dashboard',
       //member: trainerStore.getUserMembers(loggedInUser.id),
-      member: userStore.getAllUsers(loggedInUser.id),
+      member: userStore.getAllUsers(),
     };
-    logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
+    //logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
 
     const userEmail = request.cookies.member;
     const trainerEmail = request.cookies.trainer;

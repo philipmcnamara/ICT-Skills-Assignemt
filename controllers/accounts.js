@@ -62,7 +62,7 @@ const accounts = {
       logger.info(`logging in member ${userEmail.email}`);
       response.redirect('/member/'+ userEmail.id);
     }
-    else if (trainerEmail && trainerPassword) {      
+    else if (trainerEmail) {      
       response.cookie('trainer', trainerEmail.email);
       logger.info(`logging in trainer ${trainerEmail.email}`);
       response.redirect('/dashboard');
