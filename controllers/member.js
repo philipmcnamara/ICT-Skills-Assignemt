@@ -46,6 +46,13 @@ const member = {
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
+  },
+  getBMI(){
+    const recentStats = member.stats.size() -1;
+    
+    const bmi = member.stats[recentStats].bmi;
+    logger.info(`BMI!!!!!!!!!!!!!!!!: ${bmi}`);
+    return bmi;
   }
   
 };
