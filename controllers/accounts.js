@@ -58,7 +58,7 @@ const accounts = {
     const trainerPassword = trainerstore.getTrainerByPassword(request.body.password);
     
     if (userEmail && userPassword) {
-      response.cookie('member', userEmail.password);
+      response.cookie('member', userEmail.email);
       logger.info(`logging in member ${userEmail.email}`);
       response.redirect('/member/'+ userEmail.id);
     }
@@ -77,7 +77,7 @@ const accounts = {
     const trainerEmail = request.cookies.trainer;
     if(userEmail != "")
       {
-        logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
+        logger.info(`User 888888888888888888888888888888 Email returned from getCurrentUser: ${userEmail}`);
         return userstore.getUserByEmail(userEmail);
       }
     else

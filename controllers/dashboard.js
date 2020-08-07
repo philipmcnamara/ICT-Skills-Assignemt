@@ -20,7 +20,7 @@ const userStore = require('../models/member-store');
     };
     //logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
 
-    const userEmail = request.body.member.email;
+    const userEmail = request.cookies.member;
     const trainerEmail = request.cookies.trainer;
     if(userEmail != "")
       {
