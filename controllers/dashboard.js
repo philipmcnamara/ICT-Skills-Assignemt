@@ -8,9 +8,11 @@ const userStore = require('../models/member-store');
  
   const dashboard = {
     index(request, response) {
+    
     logger.info('dashboard rendering');
     const loggedInUser = accounts.getCurrentUser(request);
     //logger.info(`Logged in User From Dashboard: ${loggedInUser.email}`);
+      logger.info(`logging in member ${loggedInUser.email}`);
     const viewData = {
       name: 'Trainer Dashboard',
       //member: trainerStore.getUserMembers(loggedInUser.id),
@@ -18,7 +20,7 @@ const userStore = require('../models/member-store');
     };
     //logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
 
-    const userEmail = request.cookies.member;
+    const userEmail = request.body.member.email;
     const trainerEmail = request.cookies.trainer;
     if(userEmail != "")
       {
