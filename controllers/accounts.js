@@ -39,7 +39,7 @@ const accounts = {
     user.id = uuid.v1();
     userstore.addUser(user);
     user.stats = [];
-    user.stat
+    user.stats.bmi = userstore.getBMI(user.id);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
   },

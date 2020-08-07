@@ -121,7 +121,28 @@
       "height": "161",
       "startingWeight": "75",
       "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
-      "stats": []
+      "stats": [
+        {
+          "id": "2e3bf360-d8e6-11ea-aeda-5f733074729d",
+          "weight": "",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 0
+        },
+        {
+          "id": "317f1070-d8e6-11ea-aeda-5f733074729d",
+          "weight": "1",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 0.39
+        }
+      ]
     }
   ]
 }
