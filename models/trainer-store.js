@@ -20,6 +20,7 @@ const trainerStore = {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
+  
   addMember(member) {
     this.store.add(this.collection, member);
     this.store.save();
@@ -60,6 +61,10 @@ const trainerStore = {
   getTrainerByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
   },
+  
+  getTrainerByPassword(password) {
+    return this.store.findOneBy(this.collection, { password: pass });
+  }
 };
 
 module.exports = trainerStore;

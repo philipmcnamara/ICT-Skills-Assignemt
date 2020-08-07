@@ -51,19 +51,20 @@ const accounts = {
     },
 
   authenticate(request, response) {
-    const user = userstore.getUserByEmail(request.body.email);
-    const trainer = trainerstore.getTrainerByEmail(request.cookies.trainer);
+    const userEmail = userstore.getUserByEmail(request.body.email);
+    const userPassword = userstore.getUserByPassword(request.body.password);
+    const trainerEmail = trainerstore.getTrainerByEmail(request.cookies.trainer);
+    const trainerPassword = trainerstore.getTrainerByPassword(request.cookies.password);
     //logger.info(`logging in member ${user.email}`);
-    logger.info(`logging in trainer ${trainer.id}`);
-    if (user) {
-      response.cookie('member', user.email);
-      logger.info(`logging in member ${user.email}`);
-      logger.info(`logging in member ${user.id}`);
-      response.redirect('/member/'+ user.id);
+    //logger.info(`logging in trainer ${trainerEmail.id}`);
+    if (userEmail && userPassword) {
+      response.cookie('member', userEmail.password);
+      logger.info(`logging in member ${userEmail.email}`);
+      response.redirect('/member/'+ userEmail.id);
     }
-    else if (trainer) {      
-      response.cookie('trainer', trainer.email);
-      logger.info(`logging in trainer ${trainer.email}`);
+    else if (trainerEmail) {      
+      response.cookie('trainer', trainerEmail.email);
+      logger.info(`logging in trainer ${trainerEmail.email}`);
       response.redirect('/dashboard');
     } 
     else {
