@@ -82,41 +82,35 @@ isIdealBodyWeight()
     {
         const weightCheck = "";
         var idealWeight = false;
-        //Member member = getLoggedInMember();
-        //List<Stat> stats = member.stats;
         const weight = request.body.weight;
-        const height = member.height;
-      
+        const inchHeight = member.height/2.54;
         var excessInches = 0;
         var calcIdealWeight = 0;
-        String gender = getLoggedInMember().getGender();
-
-        Logger.info ("hCon = " + hCon);
+        var gender = member.gender;
 
 
 
-        if (hCon > 60) // if the member is over 5 ft
+        if (inchHeight > 60) // if the member is over 5 ft
         {
-            excessInches = hCon - 60; // calculate the number of excess inches
+            excessInches = inchHeight - 60; // calculate the number of excess inches
         }
-        Logger.info ("Excess Inches = " + excessInches);
-        if (getLoggedInMember().getGender().equals("male"))
+
+        if (member.gender = "male" || "Male")
         {
-            calcIdealWeight = (float) (50 + (2.3 * excessInches)); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
-            if ((memberStatWeight >= (calcIdealWeight - 0.2)) && (memberStatWeight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
+            calcIdealWeight =  (50 + (2.3 * excessInches); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
+            if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
             {
                 idealWeight = true; //if not boolean remains false
             }
         }
         else
         {
-            calcIdealWeight = (float) (45.5 + (2.3 * excessInches)); // same as above with weights changed as the person is either Female or non Specified
-            if ((memberStatWeight >= (calcIdealWeight - 0.2)) && (memberStatWeight <= (calcIdealWeight + 0.2)))
+            calcIdealWeight = (45.5 + (2.3 * excessInches); // same as above with weights changed as the person is either Female or non Specified
+            if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2)))
             {
                 idealWeight = true;
             }
-            Logger.info ("Weight = " + memberStatWeight);
-            Logger.info ("calcIdealWeight = " + calcIdealWeight);
+
         }
         if (idealWeight) //Returns String response based on the boolean value passed to it.
         {
