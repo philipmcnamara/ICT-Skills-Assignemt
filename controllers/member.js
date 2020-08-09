@@ -48,7 +48,41 @@ const member = {
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
-  }
+  },
+  
+    
+      determineBMICategory()
+    {
+        const roundBMI = member.bmi;
+
+        String bmiCat ="";
+
+        if (roundBMI <16)
+        {
+            bmiCat =  "SEVERELY UNDERWEIGHT";
+        }
+        else if (roundBMI >=16 && roundBMI<18.5)
+        {
+            bmiCat = "UNDERWEIGHT";
+        }
+        else if (roundBMI >=18.5 && roundBMI<25)
+        {
+            bmiCat = "NORMAL";
+        }
+        else if (roundBMI >=25 && roundBMI <30)
+        {
+            bmiCat = "OVERWEIGHT";
+        }
+        else if (roundBMI >=30 && roundBMI <35)
+        {
+            bmiCat = "MODERTLY OBESE";
+        }
+        else
+        {
+            bmiCat = "SEVERLY OBESE";
+        }
+        return bmiCat;
+    }
   
   
 };

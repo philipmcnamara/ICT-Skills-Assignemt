@@ -96,9 +96,21 @@
       "password": "test",
       "address": "test",
       "height": "120",
-      "startingWeight": "50",
-      "bmi": null,
-      "id": "8a20ab10-da5a-11ea-adb7-bf1d6fbf2c3c"
+      "startingWeight": "55",
+      "bmi": 41.67,
+      "id": "76aa41d0-da5b-11ea-a0b6-1b9d1f9b770b",
+      "stats": [
+        {
+          "id": "9c72a6a0-da5b-11ea-a0b6-1b9d1f9b770b",
+          "weight": "60",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 41.67
+        }
+      ]
     }
   ]
 }
