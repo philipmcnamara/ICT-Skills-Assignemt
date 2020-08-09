@@ -42,6 +42,35 @@ const accounts = {
     const initialBMI= ((startingWeight)/(height*height))*10000; //calculates BMI
     const roundBMI = (Math.round((initialBMI*100))/100);
     user.bmi = roundBMI;
+    
+        var bmiCat = "Test";
+      
+        if (roundBMI<16)
+        {
+            bmiCat =  "SEVERELY UNDERWEIGHT";
+        }
+        else if (roundBMI>=16 && roundBMI <18.5)
+        {
+            bmiCat = "UNDERWEIGHT";
+        }
+        else if (roundBMI >=18.5 && roundBMI <25)
+        {
+            bmiCat = "NORMAL";
+        }
+        else if (roundBMI >=25 && roundBMI <30)
+        {
+            bmiCat = "OVERWEIGHT";
+        }
+        else if (roundBMI >=30 && roundBMI <35)
+        {
+            bmiCat = "MODERTLY OBESE";
+        }
+        else
+        {
+            bmiCat = "SEVERLY OBESE";
+        }
+    
+    user.bmiCat = bmiCat;
     userstore.addUser(user);
     user.stats = [];
     logger.info(`registering startWeight ${startingWeight}`); 

@@ -13,59 +13,6 @@
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
-          "id": "4a20e800-da54-11ea-a459-35f20399d674",
-          "weight": "100",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 30.86
-        },
-        {
-          "id": "1cd8d770-da60-11ea-8f96-af11d1c8a7d0",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78
-        },
-        {
-          "id": "42e263f0-da60-11ea-891a-0d2d8d2ccd33",
-          "weight": "100",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 30.86,
-          "bmiCat": "MODERTLY OBESE"
-        },
-        {
-          "id": "44bd8c90-da60-11ea-891a-0d2d8d2ccd33",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78,
-          "bmiCat": "OVERWEIGHT"
-        },
-        {
-          "id": "4d6239e0-da60-11ea-891a-0d2d8d2ccd33",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78,
-          "bmiCat": "OVERWEIGHT"
-        },
-        {
           "id": "4f94aa40-da60-11ea-891a-0d2d8d2ccd33",
           "weight": "100",
           "chest": "",
@@ -90,26 +37,6 @@
       "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
       "stats": [
         {
-          "id": "2e3bf360-d8e6-11ea-aeda-5f733074729d",
-          "weight": "",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 0
-        },
-        {
-          "id": "317f1070-d8e6-11ea-aeda-5f733074729d",
-          "weight": "1",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 0.39
-        },
-        {
           "id": "ede422f0-da58-11ea-a744-c767c6fa594d",
           "weight": "60",
           "chest": "",
@@ -131,16 +58,41 @@
       "startingWeight": "75",
       "bmi": 40,
       "id": "a94c0bb0-da55-11ea-9e56-2fa193c119ac",
+      "stats": []
+    },
+    {
+      "name": "Maggie Simpson",
+      "gender": "female",
+      "email": "maggie@simpson.com",
+      "password": "test",
+      "address": "SrageeR",
+      "height": "120",
+      "startingWeight": "55",
+      "bmi": 13.89,
+      "id": "d6803230-da61-11ea-8177-61f93a81f7c0",
+      "bmiCat": "SEVERLY OBESE",
       "stats": [
         {
-          "id": "b23b2f80-da55-11ea-9e56-2fa193c119ac",
-          "weight": "90",
+          "id": "de6f2410-da61-11ea-8177-61f93a81f7c0",
+          "weight": "40",
           "chest": "",
           "thigh": "",
           "upperArm": "",
           "waist": "",
           "hips": "",
-          "bmi": 40
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT"
+        },
+        {
+          "id": "e0951150-da61-11ea-8177-61f93a81f7c0",
+          "weight": "20",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 13.89,
+          "bmiCat": "SEVERELY UNDERWEIGHT"
         }
       ]
     }
