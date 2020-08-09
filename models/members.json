@@ -8,8 +8,8 @@
       "address": "Test",
       "height": "180",
       "startingWeight": "90",
-      "bmi": 27.78,
-      "determineBMICategory": "Test",
+      "bmi": 30.86,
+      "bmiCat": "Test",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
@@ -23,7 +23,7 @@
           "bmi": 30.86
         },
         {
-          "id": "392a35b0-da5e-11ea-9c75-0d8c60ae2915",
+          "id": "1cd8d770-da60-11ea-8f96-af11d1c8a7d0",
           "weight": "90",
           "chest": "",
           "thigh": "",
@@ -31,6 +31,50 @@
           "waist": "",
           "hips": "",
           "bmi": 27.78
+        },
+        {
+          "id": "42e263f0-da60-11ea-891a-0d2d8d2ccd33",
+          "weight": "100",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 30.86,
+          "bmiCat": "MODERTLY OBESE"
+        },
+        {
+          "id": "44bd8c90-da60-11ea-891a-0d2d8d2ccd33",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT"
+        },
+        {
+          "id": "4d6239e0-da60-11ea-891a-0d2d8d2ccd33",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT"
+        },
+        {
+          "id": "4f94aa40-da60-11ea-891a-0d2d8d2ccd33",
+          "weight": "100",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 30.86,
+          "bmiCat": "MODERTLY OBESE"
         }
       ]
     },

@@ -34,25 +34,25 @@ const member = {
     const BMI= ((weight)/(height*height))*10000; //calculates BMI
     const roundBMI = (Math.round((BMI*100))/100);
     member.bmi = roundBMI;
-      const bmiCat = "Test";
+    var bmiCat = "Test";
       
-        if (roundBMI <16);
+        if (member.bmi <16)
         {
             bmiCat =  "SEVERELY UNDERWEIGHT";
         }
-        else if (roundBMI >=16 && roundBMI<18.5);
+        else if (member.bmi >=16 && member.bmi<18.5)
         {
             bmiCat = "UNDERWEIGHT";
         }
-        else if (roundBMI >=18.5 && roundBMI<25);
+        else if (member.bmi >=18.5 && member.bmi<25)
         {
             bmiCat = "NORMAL";
         }
-        else if (roundBMI >=25 && roundBMI <30);
+        else if (member.bmi >=25 && member.bmi <30)
         {
             bmiCat = "OVERWEIGHT";
         }
-        else if (roundBMI >=30 && roundBMI <35);
+        else if (member.bmi >=30 && member.bmi <35)
         {
             bmiCat = "MODERTLY OBESE";
         }
@@ -70,7 +70,8 @@ const member = {
       upperArm: request.body.upperArm,
       waist: request.body.waist,
       hips: request.body.hips,
-      bmi: roundBMI
+      bmi: roundBMI,
+      bmiCat: bmiCat
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
