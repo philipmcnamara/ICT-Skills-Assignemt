@@ -95,9 +95,9 @@ isIdealBodyWeight()
             excessInches = inchHeight - 60; // calculate the number of excess inches
         }
 
-        if (member.gender = "male" || "Male")
+        if (gender = "male" || "Male")
         {
-            calcIdealWeight =  (50 + (2.3 * excessInches); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
+            calcIdealWeight =  (50 + (2.3 * excessInches)); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
             if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
             {
                 idealWeight = true; //if not boolean remains false
@@ -105,7 +105,7 @@ isIdealBodyWeight()
         }
         else
         {
-            calcIdealWeight = (45.5 + (2.3 * excessInches); // same as above with weights changed as the person is either Female or non Specified
+            calcIdealWeight = (45.5 + (2.3 * excessInches)); // same as above with weights changed as the person is either Female or non Specified
             if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2)))
             {
                 idealWeight = true;
