@@ -11,76 +11,6 @@
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
-          "id": "26cf03c0-d8db-11ea-8030-25c431c4326d",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 28
-        },
-        {
-          "id": "88870950-d8db-11ea-aba2-d1f9c6bc5768",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 0.0028
-        },
-        {
-          "id": "a805eee0-d8db-11ea-b440-0d9eef776046",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 28
-        },
-        {
-          "id": "23dc8240-d8dc-11ea-8997-bb89f42be28b",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.7778
-        },
-        {
-          "id": "418e48f0-d8dc-11ea-a776-71ae524b24f7",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 2777.78
-        },
-        {
-          "id": "87100440-d8dc-11ea-81fb-89e6c68735ac",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 3
-        },
-        {
-          "id": "d3e1b250-d8dc-11ea-b43f-b5e12c552622",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 3
-        },
-        {
           "id": "6774a090-d8dd-11ea-a50e-4fbfe89da239",
           "weight": "90",
           "chest": "",
@@ -109,6 +39,26 @@
           "waist": "",
           "hips": "",
           "bmi": 27.78
+        },
+        {
+          "id": "785a0e50-da53-11ea-a459-35f20399d674",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78
+        },
+        {
+          "id": "4a20e800-da54-11ea-a459-35f20399d674",
+          "weight": "100",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 30.86
         }
       ]
     },
