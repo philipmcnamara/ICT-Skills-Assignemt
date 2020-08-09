@@ -8,48 +8,9 @@
       "address": "Test",
       "height": "180",
       "startingWeight": "90",
+      "bmi": 40,
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
-        {
-          "id": "6774a090-d8dd-11ea-a50e-4fbfe89da239",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27
-        },
-        {
-          "id": "b8f38300-d8dd-11ea-8d1c-93e552aa6afa",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78
-        },
-        {
-          "id": "2ff83110-d8e0-11ea-9fde-c320e73dd038",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78
-        },
-        {
-          "id": "785a0e50-da53-11ea-a459-35f20399d674",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78
-        },
         {
           "id": "4a20e800-da54-11ea-a459-35f20399d674",
           "weight": "100",
@@ -70,6 +31,7 @@
       "address": "test",
       "height": "161",
       "startingWeight": "75",
+      "bmi": 40,
       "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
       "stats": [
         {
@@ -91,6 +53,29 @@
           "waist": "",
           "hips": "",
           "bmi": 0.39
+        }
+      ]
+    },
+    {
+      "name": "Lisa Simpson",
+      "gender": "female",
+      "email": "lisa@simpson.com",
+      "password": "test",
+      "address": "resrt",
+      "height": "150",
+      "startingWeight": "75",
+      "bmi": 40,
+      "id": "a94c0bb0-da55-11ea-9e56-2fa193c119ac",
+      "stats": [
+        {
+          "id": "b23b2f80-da55-11ea-9e56-2fa193c119ac",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 40
         }
       ]
     }
