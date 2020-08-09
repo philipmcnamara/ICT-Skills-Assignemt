@@ -70,7 +70,7 @@
       "startingWeight": "55",
       "bmi": 13.89,
       "id": "d6803230-da61-11ea-8177-61f93a81f7c0",
-      "bmiCat": "SEVERLY OBESE",
+      "bmiCat": "SEVERELY UNDERWEIGHT",
       "stats": [
         {
           "id": "de6f2410-da61-11ea-8177-61f93a81f7c0",
@@ -85,6 +85,28 @@
         },
         {
           "id": "e0951150-da61-11ea-8177-61f93a81f7c0",
+          "weight": "20",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 13.89,
+          "bmiCat": "SEVERELY UNDERWEIGHT"
+        },
+        {
+          "id": "3b441830-da62-11ea-af28-c3ecdc327cac",
+          "weight": "40",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT"
+        },
+        {
+          "id": "3d565660-da62-11ea-af28-c3ecdc327cac",
           "weight": "20",
           "chest": "",
           "thigh": "",

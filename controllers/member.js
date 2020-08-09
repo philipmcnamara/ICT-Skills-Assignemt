@@ -60,7 +60,7 @@ const member = {
         {
             bmiCat = "SEVERLY OBESE";
         }
-    
+    member.bmiCat = bmiCat;
     
     const newStat = {
       id: uuid.v1(),
@@ -78,37 +78,55 @@ const member = {
   },
   
     
-      determineBMICategory()
+isIdealBodyWeight()
     {
-        const roundBMI = member.bmi;
+        const weightCheck = "";
+        var idealWeight = false;
+        //Member member = getLoggedInMember();
+        //List<Stat> stats = member.stats;
+        const weight = request.body.weight;
+        const height = member.height;
+      
+        var excessInches = 0;
+        var calcIdealWeight = 0;
+        String gender = getLoggedInMember().getGender();
 
-        const bmiCat ="";
+        Logger.info ("hCon = " + hCon);
 
-        if (roundBMI <16)
+
+
+        if (hCon > 60) // if the member is over 5 ft
         {
-            bmiCat =  "SEVERELY UNDERWEIGHT";
+            excessInches = hCon - 60; // calculate the number of excess inches
         }
-        else if (roundBMI >=16 && roundBMI<18.5)
+        Logger.info ("Excess Inches = " + excessInches);
+        if (getLoggedInMember().getGender().equals("male"))
         {
-            bmiCat = "UNDERWEIGHT";
-        }
-        else if (roundBMI >=18.5 && roundBMI<25)
-        {
-            bmiCat = "NORMAL";
-        }
-        else if (roundBMI >=25 && roundBMI <30)
-        {
-            bmiCat = "OVERWEIGHT";
-        }
-        else if (roundBMI >=30 && roundBMI <35)
-        {
-            bmiCat = "MODERTLY OBESE";
+            calcIdealWeight = (float) (50 + (2.3 * excessInches)); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
+            if ((memberStatWeight >= (calcIdealWeight - 0.2)) && (memberStatWeight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
+            {
+                idealWeight = true; //if not boolean remains false
+            }
         }
         else
         {
-            bmiCat = "SEVERLY OBESE";
+            calcIdealWeight = (float) (45.5 + (2.3 * excessInches)); // same as above with weights changed as the person is either Female or non Specified
+            if ((memberStatWeight >= (calcIdealWeight - 0.2)) && (memberStatWeight <= (calcIdealWeight + 0.2)))
+            {
+                idealWeight = true;
+            }
+            Logger.info ("Weight = " + memberStatWeight);
+            Logger.info ("calcIdealWeight = " + calcIdealWeight);
         }
-        return bmiCat;
+        if (idealWeight) //Returns String response based on the boolean value passed to it.
+        {
+            weightCheck += "You are an Ideal Weight";
+        }
+        else
+        {
+            weightCheck += "Your Weight is not Ideal";
+        }
+        return weightCheck;
     }
   
 };
