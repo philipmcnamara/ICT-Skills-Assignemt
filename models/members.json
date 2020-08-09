@@ -31,7 +31,7 @@
       "address": "test",
       "height": "161",
       "startingWeight": "75",
-      "bmi": 40,
+      "bmi": 23.15,
       "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
       "stats": [
         {
@@ -53,6 +53,16 @@
           "waist": "",
           "hips": "",
           "bmi": 0.39
+        },
+        {
+          "id": "ede422f0-da58-11ea-a744-c767c6fa594d",
+          "weight": "60",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 23.15
         }
       ]
     },
@@ -78,6 +88,17 @@
           "bmi": 40
         }
       ]
+    },
+    {
+      "name": "Maggie Simpson",
+      "gender": "female",
+      "email": "maggie@simpson.com",
+      "password": "test",
+      "address": "test",
+      "height": "100",
+      "startingWeight": "50",
+      "bmi": null,
+      "id": "a2cb5300-da59-11ea-8d31-cd9a605b8ddd"
     }
   ]
 }

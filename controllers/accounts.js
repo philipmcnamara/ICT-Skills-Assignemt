@@ -37,9 +37,14 @@ const accounts = {
   register(request, response) {
     const user = request.body;
     user.id = uuid.v1();
+    const startWeight = user.startWeight;
+    const height = user.height;
+    const initialBMI= ((startWeight)/(height*height))*10000; //calculates BMI
+    const roundBMI = (Math.round((initialBMI*100))/100);
+    user.bmi = roundBMI;
     userstore.addUser(user);
     user.stats = [];
-    user.stats.bmi = userstore.getBMI(user.id);
+    //user.stats.bmi = userstore.getBMI(user.id);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
   },
