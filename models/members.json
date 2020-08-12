@@ -68,9 +68,9 @@
       "address": "SrageeR",
       "height": "120",
       "startingWeight": "55",
-      "bmi": 13.89,
+      "bmi": 24.31,
       "id": "d6803230-da61-11ea-8177-61f93a81f7c0",
-      "bmiCat": "SEVERELY UNDERWEIGHT",
+      "bmiCat": "NORMAL",
       "stats": [
         {
           "id": "de6f2410-da61-11ea-8177-61f93a81f7c0",
@@ -115,6 +115,17 @@
           "hips": "",
           "bmi": 13.89,
           "bmiCat": "SEVERELY UNDERWEIGHT"
+        },
+        {
+          "id": "9195e170-dcbd-11ea-8d77-515425fe4546",
+          "weight": "35",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 24.31,
+          "bmiCat": "NORMAL"
         }
       ]
     }
