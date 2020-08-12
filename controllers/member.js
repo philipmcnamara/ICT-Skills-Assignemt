@@ -62,7 +62,7 @@ const member = {
         }
     member.bmiCat = bmiCat;
       
-        const weightCheck = "";
+        var weightCheck = "";
         var idealWeight = false;
         const inchHeight = member.height/2.54;
         var excessInches = 0;
@@ -95,11 +95,11 @@ const member = {
         }
         if (idealWeight = true) //Returns String response based on the boolean value passed to it.
         {
-            weightCheck += "You are an Ideal Weight";
+            weightCheck = "You are an Ideal Weight";
         }
         else
         {
-            weightCheck += "Your Weight is not Ideal";
+            weightCheck = "Your Weight is not Ideal";
         }
         member.weightCheck = weightCheck;
     
@@ -113,7 +113,9 @@ const member = {
       waist: request.body.waist,
       hips: request.body.hips,
       bmi: roundBMI,
-      bmiCat: bmiCat
+      bmiCat: bmiCat,
+      weightCheck: weightCheck
+      
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
