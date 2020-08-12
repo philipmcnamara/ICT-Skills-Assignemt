@@ -93,7 +93,7 @@ const member = {
             }
 
         }
-        if (idealWeight) //Returns String response based on the boolean value passed to it.
+        if (idealWeight = true) //Returns String response based on the boolean value passed to it.
         {
             weightCheck += "You are an Ideal Weight";
         }

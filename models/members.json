@@ -10,7 +10,7 @@
       "startingWeight": "90",
       "bmi": 30.86,
       "bmiCat": "Test",
-      "weightCheck" : "Test",
+      "weightCheck" : "",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
@@ -59,6 +59,7 @@
       "height": "150",
       "startingWeight": "75",
       "bmi": 40,
+      "weightCheck" : "",
       "id": "a94c0bb0-da55-11ea-9e56-2fa193c119ac",
       "stats": []
     },
@@ -73,6 +74,7 @@
       "bmi": 24.31,
       "id": "d6803230-da61-11ea-8177-61f93a81f7c0",
       "bmiCat": "NORMAL",
+      "weightCheck" : "",
       "stats": [
         {
           "id": "de6f2410-da61-11ea-8177-61f93a81f7c0",
