@@ -35,6 +35,12 @@ const member = {
     const roundBMI = (Math.round((BMI*100))/100);
     member.bmi = roundBMI;
     var bmiCat = "Test";
+    var weightCheck = "";
+    var idealWeight = false;
+    const inchHeight = member.height/2.54;
+    var excessInches = 0;
+    var calcIdealWeight = 0;
+    var gender = member.gender;
       
         if (member.bmi <16)
         {
@@ -62,14 +68,11 @@ const member = {
         }
     member.bmiCat = bmiCat;
       
-        var weightCheck = "";
-        var idealWeight = false;
-        const inchHeight = member.height/2.54;
-        var excessInches = 0;
-        var calcIdealWeight = 0;
-        var gender = member.gender;
 
 
+      logger.info('inchHeight = ', inchHeight);
+      logger.info('calcIdealWeight = ', calcIdealWeight);
+      logger.info('excessInches = ', excessInches);
 
         if (inchHeight > 60) // if the member is over 5 ft
         {
