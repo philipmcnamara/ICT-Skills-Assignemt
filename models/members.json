@@ -10,6 +10,7 @@
       "startingWeight": "90",
       "bmi": 30.86,
       "bmiCat": "Test",
+      "weightCheck" : "Test",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
@@ -21,7 +22,8 @@
           "waist": "",
           "hips": "",
           "bmi": 30.86,
-          "bmiCat": "MODERTLY OBESE"
+          "bmiCat": "MODERTLY OBESE",
+          "weightCheck" : "Test"
         }
       ]
     },
