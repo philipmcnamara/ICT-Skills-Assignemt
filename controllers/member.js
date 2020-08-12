@@ -103,7 +103,7 @@ const member = {
         }
         member.weightCheck = weightCheck;
     
-    
+    logger.info(`calcIdealWeight`);
     const newStat = {
       id: uuid.v1(),
       weight: request.body.weight,
@@ -122,50 +122,6 @@ const member = {
   },
   
     
-isIdealBodyWeight()
-    {
-        const weightCheck = "";
-        var idealWeight = false;
-        const inchHeight = member.height/2.54;
-        var excessInches = 0;
-        var calcIdealWeight = 0;
-        var gender = member.gender;
-
-
-
-        if (inchHeight > 60) // if the member is over 5 ft
-        {
-            excessInches = inchHeight - 60; // calculate the number of excess inches
-        }
-
-        if (gender = "male" || "Male")
-        {
-            calcIdealWeight =  (50 + (2.3 * excessInches)); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
-            if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
-            {
-                idealWeight = true; //if not boolean remains false
-            }
-        }
-        else
-        {
-            calcIdealWeight = (45.5 + (2.3 * excessInches)); // same as above with weights changed as the person is either Female or non Specified
-            if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2)))
-            {
-                idealWeight = true;
-            }
-
-        }
-        if (idealWeight) //Returns String response based on the boolean value passed to it.
-        {
-            weightCheck += "You are an Ideal Weight";
-        }
-        else
-        {
-            weightCheck += "Your Weight is not Ideal";
-        }
-        return weightCheck;
-    }
-  
 };
 
 
