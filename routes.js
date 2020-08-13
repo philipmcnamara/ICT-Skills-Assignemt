@@ -25,6 +25,6 @@ router.get('/member/:id', member.index);
 router.get('/trainermember/:id', trainer.index);
 router.get('/member/:id/deletestat/:statid', member.deleteStat);
 router.post('/member/:id/addstat', member.addStat);
-router.post('/trainermember/:id/addcomment', member.addStat);
+router.post('/trainer/addComment', trainer.addComment);
 
 module.exports = router;
