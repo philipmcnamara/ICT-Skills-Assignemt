@@ -18,6 +18,17 @@ const trainer = {
     response.render('trainermember', viewData);
   },
   
+  addComment  (request, responce)
+  {
+    const memberId = request.params.id;
+    const member = userStore.getUser(memberId);
+
+    const newStat = {
+    comment: request.body.commment
+    }
+  }
+  
+  
 
   
 };
