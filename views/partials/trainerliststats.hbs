@@ -1,0 +1,41 @@
+<table class="ui table">
+    <thead>
+    <tr>
+        <th> Weight </th>
+        <th> Chest </th>
+        <th> Thigh </th>
+        <th> UpperArm </th>
+        <th> Waist </th>
+        <th> Hips </th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each member.stats}}
+        <tr>
+            <td>
+                {{weight}}
+            </td>
+            <td>
+                {{chest}}
+            </td>
+            <td>
+                {{thigh}}
+            </td>
+            <td>
+                {{upperArm}}
+            </td>
+            <td>
+                {{waist}}
+            </td>
+            <td>
+                {{hips}}
+            </td>
+            <td>
+              <a href="/member/{{../member.id}}/deletestat/{{id}}" class="ui icon button">
+              <i class="icon trash"></i>
+          </a>
+            </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
