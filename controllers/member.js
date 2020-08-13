@@ -112,6 +112,9 @@ const member = {
             weightCheck = "Your Weight is not Ideal";
         }
         member.weightCheck = weightCheck;
+      
+      
+    
 
 
     const newStat = {
@@ -132,6 +135,15 @@ const member = {
     response.redirect('/member/' + memberId);
   },
   
+  
+    addcomment (request, response) 
+  {
+    const trainerId = request.params.id;
+    const statId = request.params.statsId;
+    stat.Comment = comment
+
+  },
+  userStore.addStat(memberId, newStat);
     
 };
 
