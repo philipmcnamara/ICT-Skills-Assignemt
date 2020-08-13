@@ -86,7 +86,6 @@ const member = {
         {
             calcIdealWeight =  (50 + (2.3 * excessInches)); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
             if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
-
           
             {
                 idealWeight = true; //if not boolean remains false
@@ -103,18 +102,19 @@ const member = {
             }
 
         }
-        /*if (idealWeight = true) //Returns String response based on the boolean value passed to it.
+        if (idealWeight == true) //Returns String response based on the boolean value passed to it.
         {
             weightCheck = "You are an Ideal Weight";
         }
         else
         {
             weightCheck = "Your Weight is not Ideal";
-        } */
+        } 
         member.weightCheck = weightCheck;
       
       logger.info(`calcIdealWeight :  ${calcIdealWeight}`);
       logger.info(`excessInches :  ${excessInches}`);
+      logger.info(`idealWeight :  ${idealWeight}`);
 
 
     const newStat = {
