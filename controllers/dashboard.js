@@ -48,7 +48,7 @@ const userStore = require('../models/member-store');
     deleteMember(request, response) {
     const memberId = request.params.id;
 //    logger.debug(`Deleting Member( ${memberId}`);
-    userStore.removeUser(memberId);
+    trainerStore.removeMember(memberId);
     response.redirect('/dashboard');
   },
 

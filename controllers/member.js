@@ -114,7 +114,6 @@ const member = {
         member.weightCheck = weightCheck;
       
       
-    
 
 
     const newStat = {
@@ -136,15 +135,7 @@ const member = {
   },
   
   
-    addcomment (request, response) 
-  {
-    const trainerId = request.params.id;
-    const statId = request.params.statsId;
-    stat.Comment = comment
 
-  },
-  userStore.addStat(memberId, newStat);
-    
 };
 
 

@@ -3,18 +3,22 @@ const uuid = require('uuid');
 
 const logger = require('../utils/logger');
 const trainerStore = require('../models/trainer-store');
+const userStore = require('../models/member-store');
 
 const trainer = {
   index(request, response) {
-    const trainerId = request.params.id;
-    logger.debug('trainer id = ', trainerId);
+    const memberId = request.params.id;
+    
+    logger.info(`MemberId test: ( ${memberId}`);
+    logger.info('Member id = ', memberId);
     const viewData = {
-      name: 'trainer',
-      member: trainerStore.getMember(trainerId),
+      name: 'Member',
+      member: userStore.getUser(memberId),
     };
-    response.render('trainer', viewData);
+    response.render('trainermember', viewData);
   },
   
+
   
 };
 

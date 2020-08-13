@@ -7,6 +7,7 @@ const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
 const member = require('./controllers/member.js');
 const accounts = require('./controllers/accounts.js');
+const trainer = require('./controllers/trainer.js');
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);
@@ -21,6 +22,7 @@ router.post('/dashboard/addmember', dashboard.addMember);
 
 router.get('/about', about.index);
 router.get('/member/:id', member.index);
+router.get('/trainermember/:id', trainer.index);
 router.get('/member/:id/deletestat/:statid', member.deleteStat);
 router.post('/member/:id/addstat', member.addStat);
 
