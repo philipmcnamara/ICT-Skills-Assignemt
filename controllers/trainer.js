@@ -26,6 +26,7 @@ const trainer = {
     const newStat = {
     comment: request.body.commment
     }
+    userStore.addStat(memberId, newStat);
   }
   
   
