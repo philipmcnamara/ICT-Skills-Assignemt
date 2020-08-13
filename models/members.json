@@ -8,9 +8,9 @@
       "address": "Test",
       "height": "180",
       "startingWeight": "90",
-      "bmi": 30.86,
-      "bmiCat": "MODERTLY OBESE",
-      "weightCheck": "Test",
+      "bmi": 1.54,
+      "bmiCat": "SEVERELY UNDERWEIGHT",
+      "weightCheck": "You are an Ideal Weight",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
@@ -35,6 +35,30 @@
           "hips": "",
           "bmi": 30.86,
           "bmiCat": "MODERTLY OBESE",
+          "weightCheck": "You are an Ideal Weight"
+        },
+        {
+          "id": "05299380-dda3-11ea-9951-2dac1843a916",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT",
+          "weightCheck": "You are an Ideal Weight"
+        },
+        {
+          "id": "09d51a30-dda3-11ea-9951-2dac1843a916",
+          "weight": "5",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 1.54,
+          "bmiCat": "SEVERELY UNDERWEIGHT",
           "weightCheck": "You are an Ideal Weight"
         }
       ]
