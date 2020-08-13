@@ -124,7 +124,8 @@ const member = {
       hips: request.body.hips,
       bmi: roundBMI,
       bmiCat: bmiCat,
-      weightCheck: weightCheck
+      weightCheck: weightCheck,
+      comment: request.body.commment
       
     };
     userStore.addStat(memberId, newStat);
