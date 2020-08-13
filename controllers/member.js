@@ -38,7 +38,7 @@ const member = {
     member.bmi = roundBMI;
       
     var bmiCat = "";
-    var weightCheck = "";
+    var weightCheck = "test";
     var idealWeight = false;
     const inchHeight = height/2.54;
     var excessInches = 0;
@@ -75,24 +75,22 @@ const member = {
     member.bmiCat = bmiCat;
       
 
-      logger.info(`calcIdealWeight :  ${calcIdealWeight}`);
-      logger.info(`excessInches :  ${excessInches}`);
+
 
         if (inchHeight > 60) // if the member is over 5 ft
         {
             excessInches = inchHeight - 60; // calculate the number of excess inches
         }
 
-        if (gender = "male" || "Male")
+        if (gender == "male" || gender == "Male")
         {
             calcIdealWeight =  (50 + (2.3 * excessInches)); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
             if ((weight >= (calcIdealWeight - 0.2)) && (weight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
-                  logger.info('calcIdealWeight = ', calcIdealWeight);
-                  logger.info('excessInches = ', excessInches);
+
           
             {
                 idealWeight = true; //if not boolean remains false
-            }
+            } 
         }
         else
         {
@@ -105,17 +103,18 @@ const member = {
             }
 
         }
-        if (idealWeight = true) //Returns String response based on the boolean value passed to it.
+        /*if (idealWeight = true) //Returns String response based on the boolean value passed to it.
         {
             weightCheck = "You are an Ideal Weight";
         }
         else
         {
             weightCheck = "Your Weight is not Ideal";
-        }
+        } */
         member.weightCheck = weightCheck;
       
-      
+      logger.info(`calcIdealWeight :  ${calcIdealWeight}`);
+      logger.info(`excessInches :  ${excessInches}`);
 
 
     const newStat = {
