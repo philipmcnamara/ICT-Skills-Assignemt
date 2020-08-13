@@ -66,7 +66,8 @@ const userStore = {
   removeStat(id, statId) {
     const member = this.getUser(id);
     const stats = member.stats;
-    _.remove(stats, { id: statId});
+    this.store.remove( stats, { id: statId});
+    //_.remove(stats, { id: statId});
     this.store.save();
   },
   

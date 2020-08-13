@@ -17,6 +17,7 @@ const member = {
     };
     response.render('member', viewData);
   },
+  
     deleteStat(request, response) {
     const memberId = request.params.id;
     const statId = request.params.statsId;
@@ -24,6 +25,7 @@ const member = {
     userStore.removeStat(memberId, statId);
     response.redirect('/Member/' + memberId);
   },
+  
     addStat(request, response) {
     logger.info(`Entered addStat`);
     const memberId = request.params.id;

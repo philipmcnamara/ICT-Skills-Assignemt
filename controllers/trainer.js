@@ -14,6 +14,28 @@ const trainer = {
     };
     response.render('trainer', viewData);
   },
+  
+  addcomment (request, response) 
+  {
+    const trainerId = request.params.id;
+    const statId = request.params.statsId;
+    stat.Comment = comment
+
+  };
+  userStore.addStat(memberId, newStat);
+  
+  
+      public static void addComment (Long id, Long statid, String Comment)
+    {
+        Member member = Member.findById(id);
+        Stat stat = Stat.findById(statid);
+        Logger.info ("Adding" + stat.Comment);
+        stat.Comment = Comment;
+        stat.save();
+        member.save();
+        render("trainermemberview.html", member);
+    }
+  
 };
 
 module.exports = trainer;

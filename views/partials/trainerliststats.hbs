@@ -35,6 +35,18 @@
               <i class="icon trash"></i>
           </a>
             </td>
+          <td>
+        ${stat.Comment}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form class="ui black horizontal form" action="/trainer/{{_member.id}}/addcomment/{{stat.id}}" method="POST"> 
+            <div class="field">
+                <label>Comment</label>
+                <input placeholder="Comment" type="text" name="Comment">
+            </div>
+                <button class="ui tiny blue submit button">Add Comment</button>
         </tr>
     {{/each}}
     </tbody>
