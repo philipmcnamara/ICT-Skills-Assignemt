@@ -14,25 +14,25 @@
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
-          "id": "34fe7630-dda7-11ea-b233-f92776bb9f7f",
-          "weight": "75",
+          "statId": "f69f8510-de54-11ea-b091-8397201ca608",
+          "weight": "100",
           "chest": "",
           "thigh": "",
           "upperArm": "",
           "waist": "",
           "hips": "",
-          "bmi": 23.15,
-          "bmiCat": "NORMAL",
-          "weightCheck": "You are an Ideal Weight"
+          "bmi": 30.86,
+          "bmiCat": "MODERTLY OBESE",
+          "weightCheck": "Your Weight is not Ideal"
         },
         {
-          "id": "bf8cff20-de50-11ea-b564-d91575042ebd",
+          "statId": "f87a3880-de54-11ea-b091-8397201ca608",
           "weight": "90",
-          "chest": "11",
-          "thigh": "4",
-          "upperArm": "13",
-          "waist": "9",
-          "hips": "10",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
           "bmi": 27.78,
           "bmiCat": "OVERWEIGHT",
           "weightCheck": "Your Weight is not Ideal"
@@ -51,32 +51,7 @@
       "bmiCat": "SEVERELY UNDERWEIGHT",
       "weightCheck": "You are an Ideal Weight",
       "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
-      "stats": [
-        {
-          "id": "7969b840-dd82-11ea-adf8-61a33de988f6",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 34.72,
-          "bmiCat": "MODERTLY OBESE",
-          "weightCheck": "You are an Ideal Weight"
-        },
-        {
-          "id": "7f6f0290-dd82-11ea-adf8-61a33de988f6",
-          "weight": "10",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 3.86,
-          "bmiCat": "SEVERELY UNDERWEIGHT",
-          "weightCheck": "You are an Ideal Weight"
-        }
-      ]
+      "stats": []
     },
     {
       "name": "Lisa Simpson",

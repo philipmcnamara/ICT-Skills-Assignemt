@@ -20,7 +20,7 @@ const member = {
   
     deleteStat(request, response) {
     const memberId = request.params.id;
-    const statId = request.params.statsId;
+    const statId = request.params.statId;
     logger.debug(`Deleting Stat ${statId} from Member ${memberId}`);
     userStore.removeStat(memberId, statId);
     response.redirect('/Member/' + memberId);
@@ -119,7 +119,7 @@ const member = {
 
 
     const newStat = {
-      id: uuid.v1(),
+      statId: uuid.v1(),
       weight: request.body.weight,
       chest: request.body.chest,
       thigh: request.body.thigh,

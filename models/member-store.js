@@ -66,7 +66,7 @@ const userStore = {
   removeStat(id, statId) {
     const member = this.getUser(id);
     _.remove(member.stats, { id: statId });
-    logger.info(`idealWeight :  ${statId}`);
+    logger.info(`Attempting to Remove Stat :  ${id}`);
   },
   
   getUserMembers(userid) {
