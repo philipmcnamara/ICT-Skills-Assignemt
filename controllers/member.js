@@ -26,6 +26,7 @@ const member = {
     response.redirect('/Member/' + memberId);
   },
   
+  
     addStat(request, response) {
     logger.info(`Entered addStat`);
     const memberId = request.params.id;

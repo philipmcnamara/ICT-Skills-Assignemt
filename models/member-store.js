@@ -65,10 +65,8 @@ const userStore = {
 
   removeStat(id, statId) {
     const member = this.getUser(id);
-    const stats = member.stats;
-    this.store.remove( stats, { id: statId});
-    //_.remove(stats, { id: statId});
-    this.store.save();
+    _.remove(member.stats, { id: statId });
+    logger.info(`idealWeight :  ${statId}`);
   },
   
   getUserMembers(userid) {
