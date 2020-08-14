@@ -65,8 +65,10 @@ const userStore = {
 
   removeStat(id, statId) {
     const member = this.getUser(id);
+    var test = _.remove(member.stats, { id: statId });
     _.remove(member.stats, { id: statId });
-    logger.info(`Attempting to Remove Stat :  ${id}`);
+    logger.info(`Attempting to Remove Stat :  ${statId}`);
+    logger.info(`Attempting to Remove Test :  ${test}`);
   },
   
   getUserMembers(userid) {

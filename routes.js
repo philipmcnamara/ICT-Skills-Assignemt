@@ -23,7 +23,7 @@ router.post('/dashboard/addmember', dashboard.addMember);
 router.get('/about', about.index);
 router.get('/member/:id', member.index);
 router.get('/trainermember/:id', trainer.index);
-router.get('/member/:id/deletestat/:statid', member.deleteStat);
+router.get('/member/:id/deletestat/:statId', member.deleteStat);
 router.post('/member/:id/addstat', member.addStat);
 router.post('/trainer/addComment', trainer.addComment);
 
