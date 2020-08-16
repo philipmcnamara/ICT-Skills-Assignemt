@@ -8,6 +8,7 @@
         <th> Waist </th>
         <th> Hips </th>
         <th> Comment </th>
+        <th> Weight Trend </th>
     </tr>
     </thead>
     <tbody>
@@ -35,9 +36,11 @@
                 {{comment}}
             </td>
             <td>
+                {{lostWeight}}
+            </td>
+            <td>
               <a href="/member/{{../member.id}}/deletestat/{{statId}}" class="ui icon button">
               <i class="icon trash"></i>
-                
           </a>
             </td>
         </tr>

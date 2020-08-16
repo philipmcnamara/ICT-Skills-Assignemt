@@ -118,7 +118,13 @@ const member = {
       logger.info(`idealWeight :  ${idealWeight}`);
 
 
-    const previousWeight = 
+    const previousWeight = member.stats.weight
+    var lostWeight = false;
+      
+      if(weight < previousWeight)
+            {
+                lostWeight = true;
+            }
 
 
     const newStat = {
@@ -132,33 +138,15 @@ const member = {
       bmi: roundBMI,
       bmiCat: bmiCat,
       weightCheck: weightCheck,
-      comment: request.body.commment
+      comment: request.body.commment,
+      lostWeight: lostWeight
+      
       
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
   },
-  
-  
-  calculateTrend(Long id, float weight)
-    {
-        Member member = Member.findById(id);
-        List<Stat> stats = member.stats;
-        boolean lostWeight = false;
-
-        if(stats.size() > 1)
-        {
-            int previousPosition = stats.size() -1;
-            float previousWeight = stats.get(previousPosition).getWeight();
-
-            if(weight < previousWeight)
-            {
-                lostWeight = true;
-            }
-        }
-        return lostWeight;
-    }
-  
+    
 
 };
 
