@@ -124,6 +124,7 @@ const member = {
       
     logger.info(`lastElement :  ${lastElement}`);
     logger.info(`previousWeight :  ${previousWeight}`);
+    logger.info(`Weight :  ${weight}`);
       
       if(weight < previousWeight)
             {
