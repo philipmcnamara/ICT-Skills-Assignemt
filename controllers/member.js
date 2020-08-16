@@ -120,14 +120,14 @@ const member = {
     var previousWeight = -1;
     const lastElement = -1;
       
-    if(member.stats.length == 0)
-      {
-        previousWeight = member.startingWeight;
-      }
-    else
+    if(member.stats.length > 0)
       {
         const lastElement = member.stats.length -1;
         previousWeight = member.stats[lastElement].weight;
+      }
+    else
+      {
+        previousWeight = member.startingWeight;
       }
     
     var lostWeight = false;

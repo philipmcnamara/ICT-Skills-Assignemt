@@ -35,8 +35,14 @@
             <td>
                 {{comment}}
             </td>
-            <td>
-                {{lostWeight}}
+             {{#if lostWeight == false}}
+                 <i class="ui large red arrow alternate circle up outline icon"></i>
+             {{/if}}
+
+             {{#else}}
+                 <i class="ui large green arrow alternate circle down outline icon"></i>
+            {{/else}}
+        <td>
             </td>
             <td>
               <a href="/member/{{../member.id}}/deletestat/{{statId}}" class="ui icon button">
