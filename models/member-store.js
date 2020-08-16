@@ -47,7 +47,7 @@ const userStore = {
   },
 
   removeUser(id) {
-    const member = this.getMember(id);
+    const member = this.getUser(id);
     this.store.remove(this.collection, member);
     this.store.save();
   },

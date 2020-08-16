@@ -52,20 +52,6 @@
       ]
     },
     {
-      "name": "Bart Simpson",
-      "gender": "male",
-      "email": "bart@simpson.com",
-      "password": "test",
-      "address": "test",
-      "height": "161",
-      "startingWeight": "75",
-      "bmi": 3.86,
-      "bmiCat": "SEVERELY UNDERWEIGHT",
-      "weightCheck": "You are an Ideal Weight",
-      "id": "d39963e0-d8ca-11ea-b457-27fb3d7d0dd5",
-      "stats": []
-    },
-    {
       "name": "Lisa Simpson",
       "gender": "female",
       "email": "lisa@simpson.com",
