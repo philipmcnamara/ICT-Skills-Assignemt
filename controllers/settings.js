@@ -8,12 +8,10 @@ const userStore = require('../models/member-store');
  
 
 const settings = {
-index(request, response) {
-    
-    const loggedInUser = accounts.getCurrentUser(request);
+  index(request, response) {
+    logger.info("settings rendering");
     const viewData = {
-      name: 'Trainer Dashboard',
-      member: userStore.getAllUsers(),
+      title: 'Member 1',
     };
     response.render("settings", viewData);
   },

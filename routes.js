@@ -8,6 +8,7 @@ const about = require('./controllers/about.js');
 const member = require('./controllers/member.js');
 const accounts = require('./controllers/accounts.js');
 const trainer = require('./controllers/trainer.js');
+const settings = require('./settings/about.js');
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);
