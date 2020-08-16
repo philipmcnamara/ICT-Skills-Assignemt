@@ -23,8 +23,8 @@ router.get('/dashboard/deletemember/:id', dashboard.deleteMember);
 router.post('/dashboard/addmember', dashboard.addMember);
 
 
-router.get("/stat/:id/editsong/:songid", stat.index);
-router.post("/song/:id/updatesong/:songid", song.update);
+router.get("/stat/:id/editstat/:statid", stat.index);
+router.post("/stat/:id/updatestat/:statid", stat.update);
 router.get('/about', about.index);
 router.get('/settings', settings.index);
 router.get('/member/:id', member.index);
