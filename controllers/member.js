@@ -120,6 +120,7 @@ const member = {
 
     const lastElement = member.stats.length -1;
     const previousWeight = lastElement.weight;
+    logger.info(`previousWeight :  ${previousWeight}`);
     var lostWeight = false;
       
       if(weight < previousWeight)
