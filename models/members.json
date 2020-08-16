@@ -8,13 +8,13 @@
       "address": "Test",
       "height": "180",
       "startingWeight": "90",
-      "bmi": 30.86,
-      "bmiCat": "MODERTLY OBESE",
+      "bmi": 27.78,
+      "bmiCat": "OVERWEIGHT",
       "weightCheck": "Your Weight is not Ideal",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
-          "statId": "209a5790-dfd7-11ea-bd04-1fc15a8d0acc",
+          "statId": "f1c040e0-dfd8-11ea-9fe9-9345be153001",
           "weight": "100",
           "chest": "",
           "thigh": "",
@@ -23,6 +23,19 @@
           "hips": "",
           "bmi": 30.86,
           "bmiCat": "MODERTLY OBESE",
+          "weightCheck": "Your Weight is not Ideal",
+          "lostWeight": false
+        },
+        {
+          "statId": "f350a4e0-dfd8-11ea-9fe9-9345be153001",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT",
           "weightCheck": "Your Weight is not Ideal",
           "lostWeight": true
         }
