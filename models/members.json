@@ -1,3 +1,110 @@
 {
-  "members": []
+  "members": [
+    {
+      "name": "Homer Simpson",
+      "gender": "male",
+      "email": "homer@simpson.com",
+      "password": "test",
+      "address": "Test",
+      "height": "180",
+      "startingWeight": "90",
+      "bmi": 3.09,
+      "bmiCat": "SEVERELY UNDERWEIGHT",
+      "weightCheck": "Your Weight is not Ideal",
+      "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
+      "stats": [
+        {
+          "statId": "f69f8510-de54-11ea-b091-8397201ca608",
+          "weight": "100",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 30.86,
+          "bmiCat": "MODERTLY OBESE",
+          "weightCheck": "Your Weight is not Ideal"
+        },
+        {
+          "statId": "3c5fd3e0-dfb1-11ea-a9c1-878c53bce3ed",
+          "weight": "75",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 23.15,
+          "bmiCat": "NORMAL",
+          "weightCheck": "You are an Ideal Weight"
+        },
+        {
+          "statId": "e45dd480-dfc4-11ea-ace7-dd4bb700feb0",
+          "weight": "100",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 30.86,
+          "bmiCat": "MODERTLY OBESE",
+          "weightCheck": "Your Weight is not Ideal",
+          "lostWeight": false
+        },
+        {
+          "statId": "e697bef0-dfc4-11ea-ace7-dd4bb700feb0",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT",
+          "weightCheck": "Your Weight is not Ideal",
+          "lostWeight": false
+        },
+        {
+          "statId": "5df1cae0-dfc5-11ea-a0cb-6d0a2f0300cc",
+          "weight": "10",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 3.09,
+          "bmiCat": "SEVERELY UNDERWEIGHT",
+          "weightCheck": "Your Weight is not Ideal",
+          "lostWeight": false
+        }
+      ]
+    },
+    {
+      "name": "Lisa Simpson",
+      "gender": "female",
+      "email": "lisa@simpson.com",
+      "password": "test",
+      "address": "resrt",
+      "height": "150",
+      "startingWeight": "75",
+      "bmi": 40,
+      "bmiCat": "MODERTLY OBESE",
+      "weightCheck": "",
+      "id": "a94c0bb0-da55-11ea-9e56-2fa193c119ac",
+      "stats": []
+    },
+    {
+      "name": "Maggie Simpson",
+      "gender": "female",
+      "email": "maggie@simpson.com",
+      "password": "test",
+      "address": "SrageeR",
+      "height": "120",
+      "startingWeight": "55",
+      "bmi": 24.31,
+      "id": "d6803230-da61-11ea-8177-61f93a81f7c0",
+      "bmiCat": "NORMAL",
+      "weightCheck": "",
+      "stats": []
+    }
+  ]
 }
