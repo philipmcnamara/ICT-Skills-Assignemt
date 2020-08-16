@@ -118,6 +118,9 @@ const member = {
       logger.info(`idealWeight :  ${idealWeight}`);
 
 
+    const previousWeight = 
+
+
     const newStat = {
       statId: uuid.v1(),
       weight: request.body.weight,
@@ -137,7 +140,7 @@ const member = {
   },
   
   
-  public static boolean calculateTrend(Long id, float weight)
+  calculateTrend(Long id, float weight)
     {
         Member member = Member.findById(id);
         List<Stat> stats = member.stats;
