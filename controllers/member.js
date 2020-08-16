@@ -137,6 +137,25 @@ const member = {
   },
   
   
+  public static boolean calculateTrend(Long id, float weight)
+    {
+        Member member = Member.findById(id);
+        List<Stat> stats = member.stats;
+        boolean lostWeight = false;
+
+        if(stats.size() > 1)
+        {
+            int previousPosition = stats.size() -1;
+            float previousWeight = stats.get(previousPosition).getWeight();
+
+            if(weight < previousWeight)
+            {
+                lostWeight = true;
+            }
+        }
+        return lostWeight;
+    }
+  
 
 };
 
