@@ -7,22 +7,25 @@ const settings = {
     const memberId = request.params.id;
     logger.debug(`Editing Member ${memberId} ${memberId}`);
     const viewData = {
-      title: "Edit Song",
-      playlist: userStore.getPlaylist(memberId),
-      song: userStore.getSong(memberId, songId)
+      name: "Member Name",
+      member: userStore.getUser(memberId),    
     };
     response.render("settings", viewData);
   },
 
   update(request, response) {
     const memberId = request.params.id;
-    const newMember = {
-      title: request.body.title,
-      artist: request.body.artist,
-      duration: Number(request.body.duration)
+    const newMember = {     
+      name: request.body.name,
+      gender: request.body.name,
+      email: request.body.name,
+      password: request.body.name,
+      address: request.body.name,
+      height: request.body.name,
+      startingWeight: request.body.name,
     };
     logger.debug(`Updating Member ${memberId}`);
-    userStore.updateUser(song, newSong);
+    userStore.updateUser( newMember);
     response.redirect("/settings/" + memberId);
   }
 };
