@@ -33,7 +33,7 @@ const member = {
     logger.info(`UserID: ${memberId}`);
     const member = userStore.getUser(memberId);
     const height = member.height;
-    const weight = request.body.weight;
+    var weight = request.body.weight;
     const BMI= ((weight)/(height*height))*10000; //calculates BMI
     const roundBMI = (Math.round((BMI*100))/100);
     member.bmi = roundBMI;
@@ -129,18 +129,20 @@ const member = {
     else
       {
         previousWeight = member.startingWeight;
-        logger.info(`Greater Than 0 :  ${member.stats.length}`);
+        logger.info(`0 :  ${member.stats.length}`);
       }
     
-    var lostWeight = true;
+    var lostWeight = false;
+    logger.info(`lostWeight being false :  ${lostWeight}`);
       
     logger.info(`lastElement :  ${lastElement}`);
     logger.info(`previousWeight :  ${previousWeight}`);
     logger.info(`Weight :  ${weight}`);
       
-    if(weight > previousWeight)
+    if(weight < previousWeight)
       {
-          lostWeight = false;
+          lostWeight = true;
+          logger.info(`lostWeight being true :  ${lostWeight}`);
       }
     logger.info(`Lost Weight :  ${lostWeight}`);
 
