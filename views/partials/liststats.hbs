@@ -1,6 +1,7 @@
 <table class="ui table">
     <thead>
     <tr>
+        <th> Date </th>
         <th> Weight </th>
         <th> Chest </th>
         <th> Thigh </th>
@@ -14,7 +15,9 @@
     <tbody>
     {{#each member.stats}}
         <tr>
-          
+            <td>
+                {{today}}
+            </td>
             <td>
                 {{weight}}
             </td>
