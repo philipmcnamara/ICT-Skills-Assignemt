@@ -130,17 +130,17 @@ const member = {
         previousWeight = member.startingWeight;
       }
     
-    var lostWeight = false;
+    var lostWeight = true;
       
     logger.info(`lastElement :  ${lastElement}`);
     logger.info(`previousWeight :  ${previousWeight}`);
     logger.info(`Weight :  ${weight}`);
       
-      if(weight < previousWeight)
-            {
-                lostWeight = true;
-            }
-
+    if(weight > previousWeight)
+      {
+          lostWeight = false;
+      }
+    logger.info(`Lost Weight :  ${lostWeight}`);
 
     const newStat = {
       statId: uuid.v1(),
