@@ -21,6 +21,7 @@ router.get('/dashboard/deletemember/:id', dashboard.deleteMember);
 router.post('/dashboard/addmember', dashboard.addMember);
 
 router.get('/about', about.index);
+router.get('/settings', settings.index);
 router.get('/member/:id', member.index);
 router.get('/trainermember/:id', trainer.index);
 router.get('/member/:id/deletestat/:statId', member.deleteStat);
