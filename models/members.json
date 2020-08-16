@@ -57,6 +57,36 @@
       "weightCheck": "",
       "id": "a94c0bb0-da55-11ea-9e56-2fa193c119ac",
       "stats": []
+    },
+    {
+      "name": "Bart Simpson",
+      "gender": "male",
+      "email": "bart@simpson.com",
+      "password": "test",
+      "address": "aedfbafed",
+      "height": "150",
+      "startingWeight": "75",
+      "bmi": 44.44,
+      "id": "6dd50e90-e001-11ea-bfb6-09d2585ac97c",
+      "bmiCat": "SEVERLY OBESE",
+      "weightCheck": "Your Weight is not Ideal",
+      "stats": [
+        {
+          "today": "16/08/2020",
+          "statId": "86ed4ff0-e001-11ea-b3c1-7baaa815566c",
+          "weight": "100",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 44.44,
+          "bmiCat": "SEVERLY OBESE",
+          "weightCheck": "Your Weight is not Ideal",
+          "lostWeight": false
+        }
+      ],
+      "date": ""
     }
   ]
 }
