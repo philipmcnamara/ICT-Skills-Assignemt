@@ -118,7 +118,8 @@ const member = {
       logger.info(`idealWeight :  ${idealWeight}`);
 
 
-    const previousWeight = member.stats.weight
+    const lastElement = member.stats.length -1;
+    const previousWeight = lastElement.weight;
     var lostWeight = false;
       
       if(weight < previousWeight)
