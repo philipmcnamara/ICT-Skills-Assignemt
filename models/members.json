@@ -8,11 +8,25 @@
       "address": "Test",
       "height": "180",
       "startingWeight": "90",
-      "bmi": 21.3,
-      "bmiCat": "NORMAL",
+      "bmi": 3.09,
+      "bmiCat": "SEVERELY UNDERWEIGHT",
       "weightCheck": "Your Weight is not Ideal",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
-      "stats": []
+      "stats": [
+        {
+          "statId": "a1122020-dfd1-11ea-84fc-f90cbb4e7d1a",
+          "weight": "10",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 3.09,
+          "bmiCat": "SEVERELY UNDERWEIGHT",
+          "weightCheck": "Your Weight is not Ideal",
+          "lostWeight": true
+        }
+      ]
     },
     {
       "name": "Lisa Simpson",
