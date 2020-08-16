@@ -100,6 +100,18 @@ const userStore = {
     stat.weightCheck= updatedStat.weightCheck,
     stat.lostWeight= updatedStat.lostWeight,
     this.store.save();
+  },
+  
+  updateUser(member, updatedMember) {
+    member.name = updatedMember.name;
+    member.gender = updatedMember.gender;
+    member.email = updatedMember.email;
+    member.password = updatedMember.password;
+    member.address = updatedMember.address;
+    member.height = updatedMember.height;
+    member.startingWeight = updatedMember.startingWeight;
+    
+    this.store.save();
   }
   
 };
