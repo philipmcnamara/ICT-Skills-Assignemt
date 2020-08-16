@@ -56,13 +56,14 @@ const userStore = require('../models/member-store');
     addMember(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const newMember = {
+      date: "",
       id: uuid.v1(),
       userid: loggedInUser.id,
       name: request.body.name,
       stats: [],
     };
   //  logger.debug('Creating a new Member', newMember);
-    trainerStore.addMember(newMember);
+    userStore.addUser(newMember);
     response.redirect('/dashboard');
   },
 };

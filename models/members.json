@@ -15,32 +15,6 @@
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
-          "statId": "69bdddd0-dfef-11ea-ae66-93cc53deba91",
-          "weight": "100",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 30.86,
-          "bmiCat": "MODERTLY OBESE",
-          "weightCheck": "Your Weight is not Ideal",
-          "lostWeight": false
-        },
-        {
-          "statId": "6b345130-dfef-11ea-ae66-93cc53deba91",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78,
-          "bmiCat": "OVERWEIGHT",
-          "weightCheck": "Your Weight is not Ideal",
-          "lostWeight": true
-        },
-        {
           "today": "16/08/2020",
           "statId": "3c5ec600-dfff-11ea-953d-df61d0c1b287",
           "weight": "85",

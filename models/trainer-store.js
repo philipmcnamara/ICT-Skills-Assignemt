@@ -5,8 +5,6 @@ const JsonStore = require('./json-store');
 
 const trainerStore = {
 
-  //store: new JsonStore('./models/trainer-store.json', { memberCollection: [] }),
-  //collection: 'memberCollection',
   
   store: new JsonStore('./models/trainers.json', { trainers: [] }),
   collection: 'trainers',

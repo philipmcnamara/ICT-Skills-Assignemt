@@ -73,7 +73,7 @@ const accounts = {
     user.bmiCat = bmiCat;
     
     
-        const weightCheck = "";
+        var weightCheck = "";
         var idealWeight = false;
         const inchHeight = user.height/2.54;
         var excessInches = 0;
@@ -117,6 +117,7 @@ const accounts = {
     user.weightCheck = weightCheck;
     userstore.addUser(user);
     user.stats = [];
+    user.date = "";
     logger.info(`registering startWeight ${startingWeight}`); 
     logger.info(`registering height ${height}`);
     //logger.info(`registering roundBMI ${roundBMI`);
