@@ -9,6 +9,7 @@ const member = require('./controllers/member.js');
 const accounts = require('./controllers/accounts.js');
 const trainer = require('./controllers/trainer.js');
 const settings = require('./controllers/settings.js');
+const stat = require("./controllers/stat.js");
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);
@@ -21,6 +22,9 @@ router.get('/dashboard', dashboard.index);
 router.get('/dashboard/deletemember/:id', dashboard.deleteMember);
 router.post('/dashboard/addmember', dashboard.addMember);
 
+
+router.get("/stat/:id/editsong/:songid", stat.index);
+router.post("/song/:id/updatesong/:songid", song.update);
 router.get('/about', about.index);
 router.get('/settings', settings.index);
 router.get('/member/:id', member.index);
