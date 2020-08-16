@@ -29,6 +29,9 @@ const trainer = {
     userStore.addStat(memberId, newStat);
   }
   
+  
+
+  
 };
 
 module.exports = trainer;

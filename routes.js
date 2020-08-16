@@ -8,7 +8,6 @@ const about = require('./controllers/about.js');
 const member = require('./controllers/member.js');
 const accounts = require('./controllers/accounts.js');
 const trainer = require('./controllers/trainer.js');
-//const settings = require('./settings/about.js');
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);
@@ -22,7 +21,6 @@ router.get('/dashboard/deletemember/:id', dashboard.deleteMember);
 router.post('/dashboard/addmember', dashboard.addMember);
 
 router.get('/about', about.index);
-//router.get('/settings', settings.index);
 router.get('/member/:id', member.index);
 router.get('/trainermember/:id', trainer.index);
 router.get('/member/:id/deletestat/:statId', member.deleteStat);
