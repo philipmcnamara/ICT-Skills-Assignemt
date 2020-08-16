@@ -78,6 +78,28 @@ const userStore = {
    
     const bmi = member.stats.indexOf(recentStats).bmi;
     return bmi;
+  },
+  
+    getStat(id, statId) {
+    const member = this.store.findOneBy(this.collection, { id: id });
+    const stats = member.songs.filter(song => song.id == statId);
+    return stats[0];
+  },
+
+  updateStat(stat, updatedStat) {
+    
+    stat.duration = updatedStat.duration;
+    stat.weight = updatedStat.weight,
+    stat.chest= updatedStat.chest,
+    stat.thigh= updatedStat.thigh,
+    stat.upperArm= updatedStat.upperArm,
+    stat.waist= updatedStat.waist,
+    stat.hips= updatedStat.hips,
+    stat.bmi= updatedStat.bmi,
+    stat.bmiCat= updatedStat.bmiCat,
+    stat.weightCheck= updatedStat.weightCheck,
+    stat.lostWeight= updatedStat.lostWeight,
+    this.store.save();
   }
   
 };
