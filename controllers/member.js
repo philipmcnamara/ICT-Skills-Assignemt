@@ -117,13 +117,19 @@ const member = {
       logger.info(`excessInches :  ${excessInches}`);
       logger.info(`idealWeight :  ${idealWeight}`);
 
+    var previousWeight = -1;
     const lastElement = -1;
-    if(member.stats.length < 0)
+      
+    if(member.stats.length == 0)
       {
-        lastElement = member.stats.length -1;
+        previousWeight = member.startingWeight;
       }
-    lastElement = member.stats.length -1;
-    const previousWeight = member.stats[lastElement].weight;
+    else
+      {
+        const lastElement = member.stats.length -1;
+        previousWeight = member.stats[lastElement].weight;
+      }
+    
     var lostWeight = false;
       
     logger.info(`lastElement :  ${lastElement}`);
