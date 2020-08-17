@@ -66,9 +66,9 @@
       "address": "aedfbafed",
       "height": "150",
       "startingWeight": "75",
-      "bmi": 44.44,
+      "bmi": 4.44,
       "id": "6dd50e90-e001-11ea-bfb6-09d2585ac97c",
-      "bmiCat": "SEVERLY OBESE",
+      "bmiCat": "SEVERELY UNDERWEIGHT",
       "weightCheck": "Your Weight is not Ideal",
       "stats": [
         {
@@ -84,6 +84,20 @@
           "bmiCat": "SEVERLY OBESE",
           "weightCheck": "Your Weight is not Ideal",
           "lostWeight": false
+        },
+        {
+          "today": "17/08/2020",
+          "statId": "7b60ae60-e084-11ea-80d0-338ffcc2e73c",
+          "weight": "90",
+          "chest": "",
+          "thigh": "",
+          "upperArm": "",
+          "waist": "",
+          "hips": "",
+          "bmi": 40,
+          "bmiCat": "SEVERLY OBESE",
+          "weightCheck": "Your Weight is not Ideal",
+          "lostWeight": true
         }
       ],
       "date": ""
