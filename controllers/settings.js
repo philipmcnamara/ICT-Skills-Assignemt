@@ -13,16 +13,15 @@ const settings = {
     response.render("settings", viewData);
   },
 
-  update(request, response) {
+  updateMember(request, response) {
     const memberId = request.params.id;
     const newMember = {     
       name: request.body.name,
-      gender: request.body.name,
-      email: request.body.name,
-      password: request.body.name,
-      address: request.body.name,
-      height: request.body.name,
-      startingWeight: request.body.name,
+      gender: request.body.gender,
+      password: request.body.password,
+      address: request.body.address,
+      height: request.body.height,
+      startingWeight: request.body.startingWeight,
     };
     logger.debug(`Updating Member ${memberId}`);
     userStore.updateUser( newMember);

@@ -27,7 +27,7 @@ router.get("/stat/:id/editstat/:statid", stat.index);
 router.post("/stat/:id/updatestat/:statid", stat.update);
 
 router.get('/settings/:id', settings.index);
-router.post('/settings/updatemember/:id', settings.update);
+router.post('/settings/:id/updatemember', settings.updateMember);
 router.get('/about', about.index);
 router.get('/settings', settings.index);
 router.get('/member/:id', member.index);
