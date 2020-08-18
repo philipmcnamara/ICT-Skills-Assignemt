@@ -194,13 +194,13 @@ const member = {
   
     updateStat(request, response) {
     const memberId = request.params.id;
-    
+    const member = userStore.getUser(memberId);
     const statId = request.params.statId;
     const stat = userStore.getStat(memberId, statId);
     logger.info(`MemberID from UpdateStat: ${memberId}`);
     logger.info(`statId from UpdateStat: ${statId}`);
     logger.info(`stat from UpdateStat: ${stat}`);
-    const member = userStore.getUser(memberId);
+    
   
     var newStat = {
 
@@ -209,7 +209,7 @@ const member = {
     };
     logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
     userStore.updateStat(stat, newStat);
-    response.redirect("/member/" + memberId);
+    response.redirect("/trainermember/" + memberId);
   }
     
 

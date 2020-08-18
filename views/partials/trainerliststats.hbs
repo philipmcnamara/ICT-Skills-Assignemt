@@ -34,16 +34,16 @@
             <td>
                 {{comment}}
             </td>
-      </tr>
-    <tr>
-        <td>
-             <form class="ui black horizontal form" action="/member/{{../member.id}}/updatestat/{{statId}}" method="POST"> 
+          <td>
+          <form class="ui black horizontal form" action="/member/{{../member.id}}/updatestat/{{statId}}" method="POST"> 
             <div class="field">
                 <label>Comment</label>
                 <input placeholder="Comment" type="text" name="Comment">
             </div>
                 <button class="ui tiny blue submit button">Add Comment</button>
-        </tr>
+            </form>
+          </td>
+      </tr>
     {{/each}}
     </tbody>
 </table>
