@@ -196,19 +196,28 @@ const member = {
     const memberId = request.params.id;
     const member = userStore.getUser(memberId);
     const statId = request.params.statId;
+    logger.info(`statId from UpdateStat: ${statId}`);
     const stat = userStore.getStat(memberId, statId);
     logger.info(`MemberID from UpdateStat: ${memberId}`);
     logger.info(`statId from UpdateStat: ${statId}`);
     logger.info(`stat from UpdateStat: ${stat}`);
     
   
-    var newStat = {
+    const updatedStat = {
 
       comment: request.body.commment,
 
     };
+      
+  /*  updateStat(stat, updatedStat) {
+
+    stat.comment = updatedStat.comment;
+
+    this.store.save();
+  },
+      */
     logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
-    userStore.updateStat(stat, newStat);
+    userStore.updateStat(stat, updatedStat);
     response.redirect("/trainermember/" + memberId);
   }
     

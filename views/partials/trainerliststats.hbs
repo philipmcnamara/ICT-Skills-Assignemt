@@ -36,6 +36,9 @@
             </td>
           <td>
           <form class="ui black horizontal form" action="/member/{{../member.id}}/updatestat/{{statId}}" method="POST"> 
+            <a href="/member/{{../member.id}}/deletestat/{{statId}}" class="ui icon button">
+              <i class="icon trash"></i>
+          </a>
             <div class="field">
                 <label>Comment</label>
                 <input placeholder="Comment" type="text" name="Comment">
