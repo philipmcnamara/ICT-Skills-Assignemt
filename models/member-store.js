@@ -10,6 +10,7 @@ const userStore = {
 
   store: new JsonStore('./models/members.json', { members: [] }),
   collection: 'members',
+  other: 'members.stats',
 
   getAllUsers() {
     return this.store.findAll(this.collection);
@@ -83,7 +84,9 @@ const userStore = {
     getStats(id,statId) {
     const member = this.getUser(id);
     logger.info(`Testing stat ${member.stats.statId}`);
-    return this.store.findBy(this.member, { statId: statId });
+    //return this.store.findBy(this.other, { statId: statId });
+    const stat = this.store.findOneBy(this.collection.stats, { statId: statId });
+    return this.store.findOneBy(this.collection.stats, { statId: statId });
      
     
       
@@ -92,7 +95,7 @@ const userStore = {
   updateStat(id, statId, updatedStat) {
     const stats = this.getStats(id, statId);
     
-    logger.info(`Updating Stat ${statId} from stat ${stats.bmi}`);
+    logger.info(`Updating Stat ${statId} from stat ${stats}`);
     stats.comment = updatedStat.comment;
     this.store.save();
   },
