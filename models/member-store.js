@@ -80,19 +80,19 @@ const userStore = {
     return bmi;
   },
   
-    getStat(memberId, statId) {
-    const member = this.getUser(memberId);
-   logger.info(`Testing stat ${this.store.findOneBy(this.collection.stats, { statId: statId }).bmi}`);
-    return this.store.findOneBy(this.collection.stats, { statId: statId });
+    getStat(statId) {
+    //const member = this.getUser(memberId);
+     //logger.info(`Testing stat ${this.store.findOneBy(this.collection.stats, { statId: statId }).bmi}`);
+    return this.store.findBy(this.collection.stats, { statId: statId });
+    
       
     //const stats = member.stats
   },
-  updateStat(memberId, statId, updatedStat) {
-    const member = this.getUser(memberId);
-    const stat = this.getStat(memberId, statId);
+  updateStat(statId, updatedStat) {
+    const stat = this.getStat(statId);
     
-    logger.info(`Updating Stat ${statId} from stat ${stat}`);
-    stat.comment = updatedStat.comment;
+    logger.info(`Updating Stat ${statId} from stat ${stat.bmi}`);
+    stats.comment = updatedStat.comment;
     this.store.save();
   },
       
