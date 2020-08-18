@@ -195,8 +195,9 @@ const member = {
     updateStat(request, response) {
     const memberId = request.params.id;
     const member = userStore.getUser(memberId);
-    const statId = request.params.statId;
-    logger.info(`statId from UpdateStat: ${statId}`);
+    logger.info(`Testing params ${request.params.statid}`);
+    const statId = request.params.statid;
+    logger.info(`Updating Stat ${statId} from Member ${memberId}`);
     const stat = userStore.getStat(memberId, statId);
     logger.info(`MemberID from UpdateStat: ${memberId}`);
     logger.info(`statId from UpdateStat: ${statId}`);
