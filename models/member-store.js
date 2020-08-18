@@ -81,30 +81,18 @@ const userStore = {
     return bmi;
   },
   
-    getStats(id,statId) {
+  getStats(id, statId) {
     const member = this.getUser(id);
-    const stats = (member.stats, { statId: statId });
-    const comment = member.stats.find(stat => stats.statId === statId).comment;
-    logger.info(`Testing stat ${comment}`);
-    return stats;//this.store.findBy(this.other, { statId: statId });
-    
-      
-    return this.store.findOneBy(this.collection.stats, { statId: statId });
-     
-    
-      
-    //const stats = member.stats
+    const stats = member.stats.find(stats => stats.statId === statId);
+    return stats;
   },
+  
   updateStat(id, statId, updatedStat) {
-    const stats = this.getStats(id, statId);
-    
-    logger.info(`Updating Stat ${statId} from stat ${stats}`);
+    const stats = this.getStats(id, statId);    
     stats.comment = updatedStat.comment;
     this.store.save();
   },
-      
 
-  
   updateUser(member, updatedMember) {
     member.name = updatedMember.name;
     member.gender = updatedMember.gender;
