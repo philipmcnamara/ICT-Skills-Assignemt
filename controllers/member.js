@@ -194,10 +194,12 @@ const member = {
   
     updateStat(request, response) {
     const memberId = request.params.id;
+    
     const statId = request.params.statId;
     const stat = userStore.getStat(memberId, statId);
     logger.info(`MemberID from UpdateStat: ${memberId}`);
     logger.info(`statId from UpdateStat: ${statId}`);
+    logger.info(`stat from UpdateStat: ${stat}`);
     const member = userStore.getUser(memberId);
   
     var newStat = {

@@ -83,7 +83,7 @@ const userStore = {
     getStat(id, statId) {
     const member = this.getUser(id);
     return this.store.findBy(this.collection, { statId: statId });
-    
+    const stats = member.stats
   },
 
   updateStat(stat, updatedStat) {
