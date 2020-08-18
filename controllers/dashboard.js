@@ -9,18 +9,13 @@ const userStore = require('../models/member-store');
  
   const dashboard = {
     index(request, response) {
-    
-    //logger.info('dashboard rendering');
+
   
     const loggedInUser = accounts.getCurrentUser(request);
-    //logger.info(`Logged in User From Dashboard: ${loggedInUser.email}`);
-    //  logger.info(`logging in member ${loggedInUser.email}`);
     const viewData = {
       name: 'Trainer Dashboard',
-      //member: trainerStore.getUserMembers(loggedInUser.id),
       member: userStore.getAllUsers(),
     };
-    //logger.info('Trainer members:', userStore.getUser(loggedInUser.id));
 
     const userEmail = request.cookies.member;
     const trainerEmail = request.cookies.trainer;
@@ -29,8 +24,6 @@ const userStore = require('../models/member-store');
      
         logger.info(`User Email returned from getCurrentUser: ${userEmail}`);
         response.cookie('member', loggedInUser.email);
-  //      logger.info(`logging in member ${loggedInUser.email}`);
-   //     logger.info(`logging in member ${loggedInUser.id}`);
         response.redirect('/member/'+ loggedInUser.id);
       }
     else if (trainerEmail != "")
@@ -48,7 +41,6 @@ const userStore = require('../models/member-store');
     deleteMember(request, response) {
     const memberId = request.params.id;
     logger.debug(`Deleting Member( ${memberId}`);
-    //trainerStore.removeMember(memberId);
     userStore.removeUser(memberId);
     response.redirect('/dashboard');
   },
@@ -62,7 +54,6 @@ const userStore = require('../models/member-store');
       name: request.body.name,
       stats: [],
     };
-  //  logger.debug('Creating a new Member', newMember);
     userStore.addUser(newMember);
     response.redirect('/dashboard');
   },
