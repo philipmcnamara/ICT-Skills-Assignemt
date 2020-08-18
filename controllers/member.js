@@ -183,7 +183,7 @@ const member = {
       bmi: roundBMI,
       bmiCat: bmiCat,
       weightCheck: weightCheck,
-      comment: request.body.commment,
+      comment: "",
       lostWeight: lostWeight
       
       

@@ -16,33 +16,33 @@
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
-          "today": "17/08/2020",
-          "statId": "e7485c20-e086-11ea-a9e6-7bd9930b5445",
+          "today": "18/08/2020",
+          "statId": "7f596220-e17c-11ea-81ae-fff5c2cc318e",
           "weight": "100",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
+          "chest": "20",
+          "thigh": "19",
+          "upperArm": "18",
+          "waist": "17",
+          "hips": "16",
           "bmi": 30.86,
           "bmiCat": "MODERTLY OBESE",
           "weightCheck": "Your Weight is not Ideal",
-          "comments": "",
+          "comment": "",
           "lostWeight": false
         },
         {
-          "today": "17/08/2020",
-          "statId": "eb5c84d0-e086-11ea-a9e6-7bd9930b5445",
+          "today": "18/08/2020",
+          "statId": "85ef2ca0-e17c-11ea-81ae-fff5c2cc318e",
           "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
+          "chest": "19",
+          "thigh": "18",
+          "upperArm": "17",
+          "waist": "16",
+          "hips": "15",
           "bmi": 27.78,
           "bmiCat": "OVERWEIGHT",
           "weightCheck": "Your Weight is not Ideal",
-          "comments": "",
+          "comment": "",
           "lostWeight": true
         }
       ]
@@ -73,37 +73,7 @@
       "id": "6dd50e90-e001-11ea-bfb6-09d2585ac97c",
       "bmiCat": "SEVERELY UNDERWEIGHT",
       "weightCheck": "Your Weight is not Ideal",
-      "stats": [
-        {
-          "today": "16/08/2020",
-          "statId": "86ed4ff0-e001-11ea-b3c1-7baaa815566c",
-          "weight": "100",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 44.44,
-          "bmiCat": "SEVERLY OBESE",
-          "weightCheck": "Your Weight is not Ideal",
-          "lostWeight": false
-        },
-        {
-          "today": "17/08/2020",
-          "statId": "7b60ae60-e084-11ea-80d0-338ffcc2e73c",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 40,
-          "bmiCat": "SEVERLY OBESE",
-          "weightCheck": "Your Weight is not Ideal",
-          "lostWeight": true
-        }
-      ],
-      "date": ""
+      "stats": []
     }
   ]
 }

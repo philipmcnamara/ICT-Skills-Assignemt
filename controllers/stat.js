@@ -10,13 +10,13 @@ const stat = {
     logger.debug(`Editing Stat ${statId} from Playlist ${memberId}`);
     const viewData = {
       name: "Edit Stat",
-      member: userStore.getUser(userStore),
+      member: userStore.getUser(memberId),
       stat: userStore.getStat(userStore, statId)
     };
     response.render("stat", viewData);
   },
 
-  update(request, response) {
+  updateStat(request, response) {
     const memberId = request.params.id;
     const statId = request.params.statId;
     const stat = userStore.getSong(memberId, statId);
@@ -24,8 +24,6 @@ const stat = {
     const member = userStore.getUser(memberId);
 
     var comment = "";
-      
-
     
     const newStat = {
 

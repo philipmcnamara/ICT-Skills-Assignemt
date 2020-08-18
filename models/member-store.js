@@ -87,18 +87,9 @@ const userStore = {
   },
 
   updateStat(stat, updatedStat) {
-    
-    stat.duration = updatedStat.duration;
-    stat.weight = updatedStat.weight,
-    stat.chest= updatedStat.chest,
-    stat.thigh= updatedStat.thigh,
-    stat.upperArm= updatedStat.upperArm,
-    stat.waist= updatedStat.waist,
-    stat.hips= updatedStat.hips,
-    stat.bmi= updatedStat.bmi,
-    stat.bmiCat= updatedStat.bmiCat,
-    stat.weightCheck= updatedStat.weightCheck,
-    stat.lostWeight= updatedStat.lostWeight,
+
+    stat.comment = updatedStat.comment;
+
     this.store.save();
   },
   
