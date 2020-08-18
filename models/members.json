@@ -12,6 +12,7 @@
       "bmi": 27.78,
       "bmiCat": "OVERWEIGHT",
       "weightCheck": "Your Weight is not Ideal",
+      "comments": "",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
       "stats": [
         {
@@ -26,6 +27,7 @@
           "bmi": 30.86,
           "bmiCat": "MODERTLY OBESE",
           "weightCheck": "Your Weight is not Ideal",
+          "comments": "",
           "lostWeight": false
         },
         {
@@ -40,6 +42,7 @@
           "bmi": 27.78,
           "bmiCat": "OVERWEIGHT",
           "weightCheck": "Your Weight is not Ideal",
+          "comments": "",
           "lostWeight": true
         }
       ]
