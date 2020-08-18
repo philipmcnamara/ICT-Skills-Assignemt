@@ -83,9 +83,12 @@ const userStore = {
   
     getStats(id,statId) {
     const member = this.getUser(id);
-    logger.info(`Testing stat ${member.stats.statId}`);
-    //return this.store.findBy(this.other, { statId: statId });
-    const stat = this.store.findOneBy(this.collection.stats, { statId: statId });
+    const stats = (member.stats, { statId: statId });
+    const comment = member.stats.find(stat => stats.statId === statId).comment;
+    logger.info(`Testing stat ${comment}`);
+    return stats;//this.store.findBy(this.other, { statId: statId });
+    
+      
     return this.store.findOneBy(this.collection.stats, { statId: statId });
      
     
