@@ -16,17 +16,12 @@ const stat = {
     response.render("stat", viewData);
   },
 
-  update(request, response) {
+  updateStat(request, response) {
     const memberId = request.params.id;
     const statId = request.params.statId;
-    const stat = userStore.getSong(memberId, statId);
+    const stat = userStore.getStat(memberId, statId);
     logger.info(`UserID: ${memberId}`);
     const member = userStore.getUser(memberId);
-    const height = member.height;
-    var weight = parseFloat(request.body.weight);
-    const BMI= ((weight)/(height*height))*10000; //calculates BMI
-    const roundBMI = (Math.round((BMI*100))/100);
-    member.bmi = roundBMI;
       
     var comment = "";
     

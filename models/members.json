@@ -12,37 +12,9 @@
       "bmi": 27.78,
       "bmiCat": "OVERWEIGHT",
       "weightCheck": "Your Weight is not Ideal",
+      "comment": "",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
-      "stats": [
-        {
-          "today": "17/08/2020",
-          "statId": "e7485c20-e086-11ea-a9e6-7bd9930b5445",
-          "weight": "100",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 30.86,
-          "bmiCat": "MODERTLY OBESE",
-          "weightCheck": "Your Weight is not Ideal",
-          "lostWeight": false
-        },
-        {
-          "today": "17/08/2020",
-          "statId": "eb5c84d0-e086-11ea-a9e6-7bd9930b5445",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperArm": "",
-          "waist": "",
-          "hips": "",
-          "bmi": 27.78,
-          "bmiCat": "OVERWEIGHT",
-          "weightCheck": "Your Weight is not Ideal",
-          "lostWeight": true
-        }
-      ]
+      "stats": []
     },
     {
       "name": "Lisa Simpson",

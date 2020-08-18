@@ -24,7 +24,7 @@ router.post('/dashboard/addmember', dashboard.addMember);
 
 
 router.get("/stat/:id/editstat/:statid", stat.index);
-router.post("/stat/:id/updatestat/:statid", stat.update);
+router.post("/stat/:id/updateStat/:statid", stat.updateStat);
 
 router.get('/settings/:id', settings.index);
 router.post('/settings/:id/updatemember', settings.updateMember);
