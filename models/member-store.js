@@ -81,17 +81,19 @@ const userStore = {
   },
   
     getStat(id, statId) {
-    const member = this.getUser(id);
+    //const member = this.getUser(id);
     return this.store.findOneBy(this.collection, { statId: statId });
-    const stats = member.stats
+    //const stats = member.stats
   },
-
-  updateStat(stat, updatedStat) {
-
+  updateStat(statId, updatedStat) {
+    const mem
+    const stats = this.getStat(statId);
+    logger.info(`Updating Stat ${statId} from stat ${stat}`);
     stat.comment = updatedStat.comment;
-
     this.store.save();
   },
+      
+
   
   updateUser(member, updatedMember) {
     member.name = updatedMember.name;

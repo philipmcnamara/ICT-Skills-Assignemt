@@ -197,28 +197,25 @@ const member = {
     const member = userStore.getUser(memberId);
     logger.info(`Testing params ${request.params.statid}`);
     const statId = request.params.statid;
-    logger.info(`Updating Stat ${statId} from Member ${memberId}`);
-    const stat = userStore.getStat(memberId, statId);
+    //logger.info(`Updating Stat ${statId} from Member ${memberId}`);
+    //const stat = userStore.getStat(memberId, statId);
     logger.info(`MemberID from UpdateStat: ${memberId}`);
     logger.info(`statId from UpdateStat: ${statId}`);
-    logger.info(`stat from UpdateStat: ${stat}`);
+    //logger.info(`stat from UpdateStat: ${stat}`);
     
   
     const updatedStat = {
 
-      comment: request.body.commment,
+      comment: request.body.comment,
 
     };
       
-  /*  updateStat(stat, updatedStat) {
+  
 
-    stat.comment = updatedStat.comment;
-
-    this.store.save();
-  },
-      */
-    logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
-    userStore.updateStat(stat, updatedStat);
+      
+  
+    //logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
+    userStore.updateStat(statId, updatedStat);
     response.redirect("/trainermember/" + memberId);
   }
     
