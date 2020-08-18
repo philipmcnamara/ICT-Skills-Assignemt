@@ -215,7 +215,7 @@ const member = {
       
   
     //logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
-    userStore.updateStat(statId, updatedStat);
+    userStore.updateStat(memberId, statId, updatedStat);
     response.redirect("/trainermember/" + memberId);
   }
     
