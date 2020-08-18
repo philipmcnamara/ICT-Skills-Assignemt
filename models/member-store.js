@@ -81,14 +81,14 @@ const userStore = {
   },
   
     getStat(id, statId) {
-    const member = this.store.findOneBy(this.collection, { id: id });
-    const stats = this.member.statsfindOneBy( { statId: statId });
-    return stats[0];
+    const member = this.getUser(id);
+    const stats = member.stats
   },
 
   updateStat(stat, updatedStat) {
 
     stat.comment = updatedStat.comment;
+
     this.store.save();
   },
   

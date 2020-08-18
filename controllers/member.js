@@ -191,6 +191,24 @@ const member = {
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
   },
+  
+    updateStat(request, response) {
+    const memberId = request.params.id;
+    const statId = request.params.statId;
+    const stat = userStore.getStat(memberId, statId);
+    logger.info(`UserID: ${memberId}`);
+    logger.info(`statId: ${statId}`);
+    const member = userStore.getUser(memberId);
+  
+    var newStat = {
+
+      comment: request.body.commment,
+
+    };
+    logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
+    userStore.updateStat(stat, newStat);
+    response.redirect("/member/" + memberId);
+  }
     
 
 };
