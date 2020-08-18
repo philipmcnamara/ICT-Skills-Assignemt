@@ -70,7 +70,7 @@ const userStore = {
   },
   
   getUserMembers(userid) {
-    return this.store.findBy(this.collection, { userid: userid });
+    return this.store.findOneBy(this.collection, { userid: userid });
     },
   getBMI(id){
     const member = this.getUser(id);
@@ -82,7 +82,7 @@ const userStore = {
   
     getStat(id, statId) {
     const member = this.getUser(id);
-    return this.store.findBy(this.collection, { statId: statId });
+    return this.store.findOneBy(this.collection, { statId: statId });
     const stats = member.stats
   },
 
