@@ -23,11 +23,11 @@ const stat = {
     logger.info(`UserID: ${memberId}`);
     const member = userStore.getUser(memberId);
 
-    var comment = "";
+    var comment = request.body.commment;
     
     const newStat = {
 
-      comment: request.body.commment,
+      comment: comment,
 
     };
     logger.debug(`Updating Song ${statId} from Playlist ${memberId}`);

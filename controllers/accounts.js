@@ -117,12 +117,10 @@ const accounts = {
     user.weightCheck = weightCheck;
     user.stats = [];
     user.date = "";
+    user.comment = "";
     userstore.addUser(user);
     logger.info(`registering startWeight ${startingWeight}`); 
     logger.info(`registering height ${height}`);
-    //logger.info(`registering roundBMI ${roundBMI`);
-    //user.stats.bmi = userstore.getBMI(user.id);
-
     response.redirect('/');
   },
   

@@ -17,21 +17,6 @@
       "stats": [
         {
           "today": "18/08/2020",
-          "statId": "7f596220-e17c-11ea-81ae-fff5c2cc318e",
-          "weight": "100",
-          "chest": "20",
-          "thigh": "19",
-          "upperArm": "18",
-          "waist": "17",
-          "hips": "16",
-          "bmi": 30.86,
-          "bmiCat": "MODERTLY OBESE",
-          "weightCheck": "Your Weight is not Ideal",
-          "comment": "",
-          "lostWeight": false
-        },
-        {
-          "today": "18/08/2020",
           "statId": "85ef2ca0-e17c-11ea-81ae-fff5c2cc318e",
           "weight": "90",
           "chest": "19",

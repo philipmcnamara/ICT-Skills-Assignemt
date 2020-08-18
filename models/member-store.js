@@ -82,14 +82,13 @@ const userStore = {
   
     getStat(id, statId) {
     const member = this.store.findOneBy(this.collection, { id: id });
-    const stats = member.songs.filter(song => song.id == statId);
+    const stats = this.member.statsfindOneBy( { statId: statId });
     return stats[0];
   },
 
   updateStat(stat, updatedStat) {
 
     stat.comment = updatedStat.comment;
-
     this.store.save();
   },
   
