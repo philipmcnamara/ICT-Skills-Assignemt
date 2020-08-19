@@ -9,8 +9,8 @@
       "address": "Test",
       "height": "180",
       "startingWeight": "90",
-      "bmi": 30.86,
-      "bmiCat": "MODERTLY OBESE",
+      "bmi": 27.78,
+      "bmiCat": "OVERWEIGHT",
       "weightCheck": "Your Weight is not Ideal",
       "comments": "",
       "id": "6e1a6700-d724-11ea-86c4-73fb9b37ddd2",
@@ -29,6 +29,21 @@
           "weightCheck": "Your Weight is not Ideal",
           "comment": "FAT BOY",
           "lostWeight": false
+        },
+        {
+          "today": "19/08/2020",
+          "statId": "6197b420-e204-11ea-b94a-897f1951d099",
+          "weight": "90",
+          "chest": "19",
+          "thigh": "18",
+          "upperArm": "17",
+          "waist": "16",
+          "hips": "15",
+          "bmi": 27.78,
+          "bmiCat": "OVERWEIGHT",
+          "weightCheck": "Your Weight is not Ideal",
+          "comment": "",
+          "lostWeight": true
         }
       ]
     },
