@@ -15,7 +15,6 @@ const settings = {
 
   updateMember(request, response) {
     const memberId = request.params.id;
-    const member = userStore.getUser(memberId);
     
     const updateMember = {     
       

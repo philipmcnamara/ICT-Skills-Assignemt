@@ -181,7 +181,6 @@ const member = {
       comment: "",
       lostWeight: lostWeight
       
-      
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
