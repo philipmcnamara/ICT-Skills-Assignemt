@@ -196,10 +196,8 @@ const member = {
     const updatedStat = {
 
       comment: request.body.comment,
+      };
 
-    };
-      
-    //logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
     userStore.updateStat(memberId, statId, updatedStat);
     response.redirect("/trainermember/" + memberId);
   }

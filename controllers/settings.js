@@ -15,7 +15,10 @@ const settings = {
 
   updateMember(request, response) {
     const memberId = request.params.id;
-    const newMember = {     
+    const member = userStore.getUser(memberId);
+    
+    const updateMember = {     
+      
       name: request.body.name,
       gender: request.body.gender,
       password: request.body.password,
@@ -24,9 +27,11 @@ const settings = {
       startingWeight: request.body.startingWeight,
     };
     logger.debug(`Updating Member ${memberId}`);
-    userStore.updateUser( newMember);
+    userStore.updateUser( memberId, updateMember);
     response.redirect("/settings/" + memberId);
   }
 };
+
+
 
 module.exports = settings;
