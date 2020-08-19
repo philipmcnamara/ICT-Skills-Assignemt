@@ -17,7 +17,7 @@ const settings = {
     const memberId = request.params.id;
     const member = userStore.getUser(memberId);
     logger.info(`8888888888888888888888888888888888888888 ${member.name} ${member.gender}`);
-    
+    logger.info(`87777777777777777777777777777777777777777 ${request.body.address} `);
     const memberChange = {   
       
       name: request.body.name,
@@ -28,9 +28,11 @@ const settings = {
       startingWeight: request.body.startingWeight,
     };
     
+    logger.info(`44444444444444444444444444444444444444444 ${memberChange.address} `);
+    
     logger.debug(`Updating Member ${memberId}`);
-    userStore.updateUser( memberChange, memberId);
-    response.redirect("/settings/" + memberId);
+    userStore.updateUser(memberChange, memberId);
+    response.redirect("/member/" + memberId);
   }
 };
 

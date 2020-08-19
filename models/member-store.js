@@ -93,14 +93,15 @@ const userStore = {
     this.store.save();
   },
 
-  updateUser(member, updatedMember) {
-    member.name = updatedMember.name;
-    member.gender = updatedMember.gender;
-    member.email = updatedMember.email;
-    member.password = updatedMember.password;
-    member.address = updatedMember.address;
-    member.height = updatedMember.height;
-    member.startingWeight = updatedMember.startingWeight;
+  updateUser(memberChange, memberId) {
+    const member = this.getUser(memberId);
+    member.name = memberChange.name;
+    member.gender = memberChange.gender;
+    member.email = memberChange.email;
+    member.password = memberChange.password;
+    member.address = memberChange.address;
+    member.height = memberChange.height;
+    member.startingWeight = memberChange.startingWeight;
     
     this.store.save();
   }
