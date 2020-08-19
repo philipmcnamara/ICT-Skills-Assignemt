@@ -93,10 +93,7 @@ const userStore = {
     this.store.save();
   },
 
-  updateUser(memberId, updatedMember) {
-    
-    const member = this.getUser(memberId)
-    
+  updateUser(member, updatedMember) {
     member.name = updatedMember.name;
     member.gender = updatedMember.gender;
     member.email = updatedMember.email;
@@ -106,7 +103,7 @@ const userStore = {
     member.startingWeight = updatedMember.startingWeight;
     
     this.store.save();
-  },
+  }
   
 };
 module.exports = userStore;

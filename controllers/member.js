@@ -181,6 +181,7 @@ const member = {
       comment: "",
       lostWeight: lostWeight
       
+      
     };
     userStore.addStat(memberId, newStat);
     response.redirect('/member/' + memberId);
@@ -195,8 +196,10 @@ const member = {
     const updatedStat = {
 
       comment: request.body.comment,
-      };
 
+    };
+      
+    //logger.debug(`Updating Stat ${statId} from Member ${memberId}`);
     userStore.updateStat(memberId, statId, updatedStat);
     response.redirect("/trainermember/" + memberId);
   }
